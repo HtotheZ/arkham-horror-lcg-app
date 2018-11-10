@@ -1,0 +1,10 @@
+<div class="container">
+  <ul *ngFor="let character of characters" class="list-group">
+    <li class="character-list list-group-item rounded">
+      <div>Name: {{character.name}}</div>
+      <div><img src="{{character.img}}"></div>
+      <div>Physical Trauma: {{character.physTrauma}}</div>
+      <div>Mental Trauma: {{character.menTrauma}}</div>
+    </li>
+  </ul>
+</div>

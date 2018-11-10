@@ -1,0 +1,27 @@
+{
+  "characters": [{
+      "id": 1,
+      "img": "https://arkhamdb.com/bundles/cards/01001.png",
+      "name": "json-server",
+      "physTrauma": 0,
+      "menTrauma": 1
+    },
+    {
+      "id": 2,
+      "img": "https://arkhamdb.com/bundles/cards/01001.png",
+      "name": "Cthulhu fhatgn",
+      "physTrauma": 0,
+      "menTrauma": 1
+    }
+  ],
+  "investigators": [{
+    "id": 1,
+    "img": "https://arkhamdb.com/bundles/cards/01001.png",
+    "name": "Roland Banks"
+  }],
+  "notes": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }]
+}
