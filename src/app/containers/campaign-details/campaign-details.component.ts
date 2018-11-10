@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CharactersService } from 'src/app/services/characters.service';
 import { Character } from 'src/app/interfaces/character.interface';
+import { CharactersService } from 'src/app/services/characters.service';
 
 @Component({
-  selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.scss']
+  selector: 'app-campaign-details',
+  templateUrl: './campaign-details.component.html',
+  styleUrls: ['./campaign-details.component.scss']
 })
-export class CharactersComponent implements OnInit {
+export class CampaignDetailsComponent implements OnInit {
 
   characters: Character[];
 
