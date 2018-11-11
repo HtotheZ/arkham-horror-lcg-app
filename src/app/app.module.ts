@@ -13,6 +13,7 @@ import { CharactersListComponent } from './components/characters-list/characters
 import { NotesListComponent } from './components/notes-list/notes-list.component';
 import { CreateNoteComponent } from './containers/create-note/create-note.component';
 import { CreateCharacterComponent } from './containers/create-character/create-character.component';
+import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CreateCharacterComponent } from './containers/create-character/create-c
     CharactersListComponent,
     NotesListComponent,
     CreateNoteComponent,
-    CreateCharacterComponent
+    CreateCharacterComponent,
+    EditCharacterComponent
   ],
   imports: [
     BrowserModule,

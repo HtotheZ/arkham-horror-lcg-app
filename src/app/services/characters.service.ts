@@ -14,6 +14,10 @@ export class CharactersService {
     return this.http.get('/api/characters');
   }
 
+  getCharacterById(id) {
+    return this.http.get(`api/characters/${id}`);
+  }
+
   getInvestigators() {
     return this.http.get('api/investigators');
   }

@@ -1,6 +1,6 @@
 <div class="container">
-  <ul [routerLink]="['']" *ngFor="let character of characters" class="list-group">
-    <li class="character-list list-group-item rounded">
+  <ul *ngFor="let character of characters" class="list-group">
+    <li class="character-list list-group-item rounded" (click)="editCharacter(character.id)">
       <div>Name: {{character.name}}</div>
       <div><img src="{{character.img}}"></div>
       <div>Physical Trauma: {{character.physTrauma}}</div>

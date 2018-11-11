@@ -5,6 +5,7 @@ import { CreateCampaignComponent } from './containers/create-campaign/create-cam
 import { CampaignDetailsComponent } from './containers/campaign-details/campaign-details.component';
 import { CreateCharacterComponent } from './containers/create-character/create-character.component';
 import { CreateNoteComponent } from './containers/create-note/create-note.component';
+import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
 // import { CharactersListComponent } from './components/characters-list/characters-list.component';
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'campaign-details/add-character',
     component: CreateCharacterComponent
+  },
+  {
+    path: 'campaign-details/edit-character/:id',
+    component: EditCharacterComponent
   },
   {
     path: 'campaign-details/add-note',

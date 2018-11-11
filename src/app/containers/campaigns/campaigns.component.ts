@@ -22,8 +22,4 @@ export class CampaignsComponent implements OnInit {
       (campaigns: any) => this.campaigns = campaigns
     );
   }
-
-  getCampaigns() {
-    return this.http.get('/api/campaigns');
-  }
 }
