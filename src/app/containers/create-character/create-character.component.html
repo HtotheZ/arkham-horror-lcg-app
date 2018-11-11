@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="form-group">
+    <span class="text-primary">* </span><label class="font-weight-bold" for="investigatorSelection">Choose Investigator</label>
+    <select class="form-control" id="investigatorSelection">
+      <option *ngFor="let investigator of investigators">{{investigator.name}}</option>
+    </select>
+    <!-- <div *ngIf="!addCharacterForm.get('species').valid && addCharacterForm.get('species').touched">
+      <div class="text-danger">required - This field is required</div>
+    </div> -->
+  </div>
+  <button [routerLink]="['../']" class="btn btn-danger">BACK</button>
+</div>

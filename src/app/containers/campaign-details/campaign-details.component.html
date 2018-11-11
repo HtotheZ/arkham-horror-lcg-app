@@ -1,4 +1,14 @@
 <div class="container">
-  <app-characters-list [characters]="characters"></app-characters-list>
+  <div class="row">
+    <div class="col">
+      <app-characters-list [characters]="characters"></app-characters-list>
+      <button [routerLink]="['add-character']" class="btn btn-success">ADD A NEW CHARACTER</button>
+    </div>
+    <div class="col">
+      <app-notes-list [notes]="notes"></app-notes-list>
+      <button [routerLink]="['add-note']" class="btn btn-success">ADD A NEW NOTE</button>
+    </div>
+  </div>
   <button [routerLink]="['']" class="btn btn-danger">BACK TO CAMPAIGN SELECTION</button>
 </div>
+<router-outlet></router-outlet>

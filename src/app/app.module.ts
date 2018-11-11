@@ -10,7 +10,9 @@ import { CreateCampaignComponent } from './containers/create-campaign/create-cam
 import { CampaignsService } from './services/campaigns.service';
 import { CampaignDetailsComponent } from './containers/campaign-details/campaign-details.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
-import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
+import { NotesListComponent } from './components/notes-list/notes-list.component';
+import { CreateNoteComponent } from './containers/create-note/create-note.component';
+import { CreateCharacterComponent } from './containers/create-character/create-character.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EditCharacterComponent } from './containers/edit-character/edit-charact
     CreateCampaignComponent,
     CampaignDetailsComponent,
     CharactersListComponent,
-    EditCharacterComponent
+    NotesListComponent,
+    CreateNoteComponent,
+    CreateCharacterComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { CampaignsComponent } from './containers/campaigns/campaigns.component';
 import { CreateCampaignComponent } from './containers/create-campaign/create-campaign.component';
 import { CampaignDetailsComponent } from './containers/campaign-details/campaign-details.component';
-// import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
+import { CreateCharacterComponent } from './containers/create-character/create-character.component';
+import { CreateNoteComponent } from './containers/create-note/create-note.component';
+// import { CharactersListComponent } from './components/characters-list/characters-list.component';
 
 const routes: Routes = [
   {
@@ -16,12 +18,26 @@ const routes: Routes = [
   },
   {
     path: 'campaign-details',
-    component: CampaignDetailsComponent
+    component: CampaignDetailsComponent,
+    // children: [
+    //   {
+    //     path: 'add-character',
+    //     component: CreateCharacterComponent
+    //   },
+    // {
+    //   path: '',
+    //   component: CharactersListComponent
+    // }
+    // ]
   },
-  // {
-  //   path: 'edit-character',
-  //   component: EditCharacterComponent
-  // }
+  {
+    path: 'campaign-details/add-character',
+    component: CreateCharacterComponent
+  },
+  {
+    path: 'campaign-details/add-note',
+    component: CreateNoteComponent
+  }
 ];
 
 @NgModule({

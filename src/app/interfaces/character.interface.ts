@@ -1,7 +1,6 @@
-export interface Character {
-  id: number;
-  img: string;
-  name: string;
+import { Investigator } from './investigator.interface';
+
+export interface Character extends Investigator {
   physTrauma: number;
   menTrauma: number;
 }

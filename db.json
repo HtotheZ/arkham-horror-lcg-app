@@ -18,26 +18,50 @@
   "characters": [{
       "id": 1,
       "img": "https://arkhamdb.com/bundles/cards/01001.png",
-      "name": "json-server",
+      "name": "Roland Banks",
       "physTrauma": 0,
       "menTrauma": 1
     },
     {
       "id": 2,
-      "img": "https://arkhamdb.com/bundles/cards/01001.png",
-      "name": "Cthulhu fhatgn",
+      "img": "https://arkhamdb.com/bundles/cards/03004.png",
+      "name": "Akachi Onyele",
       "physTrauma": 0,
       "menTrauma": 1
     }
   ],
   "investigators": [{
-    "id": 1,
-    "img": "https://arkhamdb.com/bundles/cards/01001.png",
-    "name": "Roland Banks"
-  }],
+      "id": 1,
+      "img": "https://arkhamdb.com/bundles/cards/01001.png",
+      "name": "Roland Banks"
+    },
+    {
+      "id": 2,
+      "img": "https://arkhamdb.com/bundles/cards/03004.png",
+      "name": "Akachi Onyele"
+    },
+    {
+      "id": 3,
+      "img": "https://arkhamdb.com/bundles/cards/04001.png",
+      "name": "Leo Anderson"
+    },
+    {
+      "id": 4,
+      "img": "https://arkhamdb.com/bundles/cards/02004.png",
+      "name": "Jim Culver"
+    }
+  ],
   "notes": [{
-    "id": 1,
-    "body": "some comment",
-    "postId": 1
-  }]
+      "id": 1,
+      "body": "Cat dog hate mouse eat string barf pillow no baths hate everything. Run outside as soon as door open human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken"
+    },
+    {
+      "id": 2,
+      "body": "should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now meow all night and i could pee on this if i had the energy you are a captive a"
+    },
+    {
+      "id": 3,
+      "body": "man clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken "
+    }
+  ]
 }
