@@ -11,7 +11,6 @@ import { CharactersService } from 'src/app/services/characters.service';
 export class EditCharacterComponent implements OnInit {
 
   character: Character;
-  x;
 
   constructor(
     private route: ActivatedRoute,

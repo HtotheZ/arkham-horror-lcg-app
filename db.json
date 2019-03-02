@@ -3,16 +3,6 @@
       "id": 1,
       "name": "Path to Carcosa",
       "date": "10-11-2018"
-    },
-    {
-      "id": 1,
-      "name": "Path to Carcosa",
-      "date": "10-11-2018"
-    },
-    {
-      "id": 1,
-      "name": "Path to Carcosa",
-      "date": "10-11-2018"
     }
   ],
   "characters": [{
@@ -20,14 +10,16 @@
       "img": "https://arkhamdb.com/bundles/cards/01001.png",
       "name": "Roland Banks",
       "physTrauma": 0,
-      "menTrauma": 1
+      "menTrauma": 1,
+      "unusedXP": 3
     },
     {
       "id": 2,
       "img": "https://arkhamdb.com/bundles/cards/03004.png",
       "name": "Akachi Onyele",
       "physTrauma": 0,
-      "menTrauma": 1
+      "menTrauma": 1,
+      "unusedXP": 3
     }
   ],
   "investigators": [{
@@ -53,7 +45,7 @@
   ],
   "notes": [{
       "id": 1,
-      "body": "Cat dog hate mouse eat string barf pillow no baths hate everything. Run outside as soon as door open human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken"
+      "body": "Badacze zdobyli zaufanie Ichatci"
     },
     {
       "id": 2,
@@ -62,6 +54,14 @@
     {
       "id": 3,
       "body": "man clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken "
+    },
+    {
+      "id": 4,
+      "body": "Alejandro kontynuuje badania na własną rękę"
+    },
+    {
+      "id": 5,
+      "body": "Badacze oczyścili drogę do ruin Eztli"
     }
   ]
 }

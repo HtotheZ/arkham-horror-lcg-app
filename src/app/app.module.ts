@@ -14,6 +14,7 @@ import { NotesListComponent } from './components/notes-list/notes-list.component
 import { CreateNoteComponent } from './containers/create-note/create-note.component';
 import { CreateCharacterComponent } from './containers/create-character/create-character.component';
 import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
+import { EditNoteComponent } from './containers/edit-note/edit-note.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditCharacterComponent } from './containers/edit-character/edit-charact
     NotesListComponent,
     CreateNoteComponent,
     CreateCharacterComponent,
-    EditCharacterComponent
+    EditCharacterComponent,
+    EditNoteComponent
   ],
   imports: [
     BrowserModule,

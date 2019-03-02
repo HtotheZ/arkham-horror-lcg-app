@@ -1,0 +1,21 @@
+@import '../../shared/variables/variables';
+@import '../../shared/mixins/flexbox';
+
+.list-group {
+  @include flexbox($direction: column, $justify: space-around);
+
+  .notes-list-item {
+    margin-bottom: 5px;
+    background-color: $notesBackgroundColor;
+    width: 100%;
+    cursor: pointer;
+    .note-body {
+      font-family: $fontNotes;
+      font-size: 1.2rem;
+    }
+    
+    // .buttons-section {
+    //   @include flexbox($justify: flex-end);
+    // }
+  }
+}

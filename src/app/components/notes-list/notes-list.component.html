@@ -1,14 +1,15 @@
-<div class="container">
-  <ul [routerLink]="['']" *ngFor="let note of notes" class="list-group">
-    <li class="notes-list list-group-item rounded">
-      <div>Note Id: {{note.id}}</div>
-      <div>{{note.body}}</div>
-      <button type="button" class="btn btn-secondary">
-        <i class="fa fa-pencil" aria-hidden="true"></i> Edit
-      </button>
-      <button type="button" class="btn btn-danger">
-        <i class="fa fa-trash-o" aria-hidden="true"></i> Remove
-      </button>
+<div class="notes-container">
+  <ul *ngFor="let note of notes" class="list-group">
+    <li class="notes-list-item list-group-item rounded" (click)="editNote(2)">
+      <div class="note-body">{{note.body}}</div>
+      <!-- <div class="buttons-section">
+        <button type="button" class="btn btn-secondary">
+          <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+        </button>
+        <button type="button" class="btn btn-danger">
+          <i class="fa fa-trash-o" aria-hidden="true"></i> Remove
+        </button>
+      </div> -->
     </li>
   </ul>
 </div>

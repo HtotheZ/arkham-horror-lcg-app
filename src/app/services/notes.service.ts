@@ -13,4 +13,8 @@ export class NotesService {
   getNotes() {
     return this.http.get('/api/notes');
   }
+
+  getNoteById(id: number) {
+    return this.http.get(`api/notes/${id}`);
+  }
 }

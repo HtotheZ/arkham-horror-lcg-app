@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Note } from 'src/app/interfaces/note.interface';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-notes-list',
@@ -10,6 +11,13 @@ export class NotesListComponent {
 
   @Input() notes: Note[];
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
+
+  editNote(id: number) {
+    this.router.navigate([`edit-note/${id}`], { relativeTo: this.route });
+  }
 
 }

@@ -6,6 +6,7 @@ import { CampaignDetailsComponent } from './containers/campaign-details/campaign
 import { CreateCharacterComponent } from './containers/create-character/create-character.component';
 import { CreateNoteComponent } from './containers/create-note/create-note.component';
 import { EditCharacterComponent } from './containers/edit-character/edit-character.component';
+import { EditNoteComponent } from './containers/edit-note/edit-note.component';
 // import { CharactersListComponent } from './components/characters-list/characters-list.component';
 
 const routes: Routes = [
@@ -42,7 +43,11 @@ const routes: Routes = [
   {
     path: 'campaign-details/add-note',
     component: CreateNoteComponent
-  }
+  },
+  {
+    path: 'campaign-details/edit-note/:id',
+    component: EditNoteComponent
+  },
 ];
 
 @NgModule({

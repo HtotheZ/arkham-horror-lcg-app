@@ -1,13 +1,27 @@
+@import '../../shared/variables/variables';
+@import '../../shared/mixins/flexbox';
+
 .character-list {
-  background-color: #051e00;
+  background-color: $characterBackgroundColor;
   color: white;
   margin-bottom: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  img {
-    height: 100px;
-    width: 140px;
+  @include flexbox($direction: column);
+  &-header {
+    width: 100%;
+    margin-bottom: 10px;
+    @include flexbox($justify: center);
+  }
+  &-body {
+    width: 100%;
+    margin-bottom: 15px;
+    @include flexbox($justify: space-around);
+    img {
+      height: 100px;
+      width: 140px;
+    }
+  }
+  &-buttons {
+    width: 100%;
+    @include flexbox($justify: center);
   }
 }
