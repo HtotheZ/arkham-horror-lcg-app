@@ -19,13 +19,14 @@ const routes: Routes = [
     component: CreateCampaignComponent
   },
   {
-    path: 'campaign-details',
+    path: 'campaign-details/:id',
     component: CampaignDetailsComponent,
     // children: [
     //   {
     //     path: 'add-character',
     //     component: CreateCharacterComponent
     //   },
+    // ]
     // {
     //   path: '',
     //   component: CharactersListComponent
@@ -33,19 +34,19 @@ const routes: Routes = [
     // ]
   },
   {
-    path: 'campaign-details/add-character',
+    path: 'campaign-details/:id/add-character',
     component: CreateCharacterComponent
   },
   {
-    path: 'campaign-details/edit-character/:id',
+    path: 'campaign-details/:id/edit-character/:id',
     component: EditCharacterComponent
   },
   {
-    path: 'campaign-details/add-note',
+    path: 'campaign-details/:id/add-note',
     component: CreateNoteComponent
   },
   {
-    path: 'campaign-details/edit-note/:id',
+    path: 'campaign-details/:id/edit-note/:id',
     component: EditNoteComponent
   },
 ];

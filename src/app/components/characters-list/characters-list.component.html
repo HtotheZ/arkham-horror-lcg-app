@@ -1,13 +1,13 @@
 <div class="container">
   <ul *ngFor="let character of characters" class="list-group">
     <li class="character-list list-group-item rounded" (click)="editCharacter(character.id)">
-      <div class="character-list-header">Name: {{character.name}}</div>
+      <div class="character-list-header">Name: {{character?.name}}</div>
       <div class="character-list-body">
-        <div><img src="{{character.img}}"></div>
+        <div><img src="{{character?.img}}"></div>
         <div>
-          <div>Physical Trauma: {{character.physTrauma}}</div>
-          <div>Mental Trauma: {{character.menTrauma}}</div>
-          <div>Unused XP: {{character.unusedXP}}</div>
+          <div>Physical Trauma: {{character?.physTrauma}}</div>
+          <div>Mental Trauma: {{character?.menTrauma}}</div>
+          <div>Unused XP: {{character?.unusedXP}}</div>
         </div>
       </div>
       <div class="character-list-buttons">

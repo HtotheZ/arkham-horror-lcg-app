@@ -14,7 +14,8 @@
   .main-header {
     background-color: $itemBackgroundColorMain;
     @include flexbox($align: center, $justify: center);
-    height: 16%;
+    height: 15%;
+    margin-bottom: 10px;
     &-text {
       @include flexbox($align: center, $justify: center);
     }

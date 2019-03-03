@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Character } from 'src/app/interfaces/character.interface';
 import { CharactersService } from 'src/app/services/characters.service';
 
@@ -14,6 +14,7 @@ export class EditCharacterComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private charactersService: CharactersService
   ) { }
 
@@ -23,5 +24,9 @@ export class EditCharacterComponent implements OnInit {
         this.charactersService.getCharacterById(x.id).subscribe(
           (character: Character) => this.character = character
         ));
+  }
+
+  goBack() {
+    this.router.navigate(['campaign-details']);
   }
 }

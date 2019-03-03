@@ -1,8 +1,8 @@
 <div class="container">
   <ul class="list-group">
     <li class="note list-group-item rounded">
-      <div>Name: {{note.body}}</div>
+      <div>Name: {{note?.body}}</div>
     </li>
   </ul>
-  <button [routerLink]="['../']" class="btn btn-danger">BACK</button>
+  <button (click)="goBack()" class="btn btn-danger">BACK</button>
 </div>

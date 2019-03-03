@@ -1,6 +1,6 @@
 <div class="notes-container">
   <ul *ngFor="let note of notes" class="list-group">
-    <li class="notes-list-item list-group-item rounded" (click)="editNote(2)">
+    <li class="notes-list-item list-group-item rounded" (click)="editNote(note.id)">
       <div class="note-body">{{note.body}}</div>
       <!-- <div class="buttons-section">
         <button type="button" class="btn btn-secondary">
