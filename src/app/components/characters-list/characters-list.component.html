@@ -1,23 +1,21 @@
-<div class="container">
-  <ul *ngFor="let character of characters" class="list-group">
-    <li class="character-list list-group-item rounded" (click)="editCharacter(character.id)">
-      <div class="character-list-header">Name: {{character?.name}}</div>
-      <div class="character-list-body">
-        <div><img src="{{character?.img}}"></div>
-        <div>
-          <div>Physical Trauma: {{character?.physTrauma}}</div>
-          <div>Mental Trauma: {{character?.menTrauma}}</div>
-          <div>Unused XP: {{character?.unusedXP}}</div>
-        </div>
+<ul *ngFor="let character of characters" class="list-group">
+  <li class="character-list list-group-item rounded" (click)="editCharacter(character.id)">
+    <div class="character-list-header">Name: {{character?.name}}</div>
+    <div class="character-list-body">
+      <div><img src="{{character?.img}}"></div>
+      <div>
+        <div>Physical Trauma: {{character?.physTrauma}}</div>
+        <div>Mental Trauma: {{character?.menTrauma}}</div>
+        <div>Unused XP: {{character?.unusedXP}}</div>
       </div>
-      <!-- <div class="character-list-buttons">
-        <button type="button" class="btn btn-secondary">
-          <i class="fa fa-pencil" aria-hidden="true"></i> Edit
-        </button>
-        <button type="button" class="btn btn-danger">
-          <i class="fa fa-trash-o" aria-hidden="true"></i> Remove
-        </button>
-      </div> -->
-    </li>
-  </ul>
-</div>
+    </div>
+    <!-- <div class="character-list-buttons">
+      <button type="button" class="btn btn-secondary">
+        <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+      </button>
+      <button type="button" class="btn btn-danger">
+        <i class="fa fa-trash-o" aria-hidden="true"></i> Remove
+      </button>
+    </div> -->
+  </li>
+</ul>
