@@ -4,7 +4,7 @@ import { CharactersService } from 'src/app/services/characters.service';
 import { Note } from 'src/app/interfaces/note.interface';
 import { NotesService } from 'src/app/services/notes.service';
 import { filter, tap, map } from 'rxjs/operators';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CampaignsService } from 'src/app/services/campaigns.service';
 import { Campaign } from 'src/app/interfaces/campaign.interface';
 
@@ -21,6 +21,7 @@ export class CampaignDetailsComponent implements OnInit {
 
   constructor(
     private charactersService: CharactersService,
+    private router: Router,
     private route: ActivatedRoute,
     private notesService: NotesService,
     private campaignsService: CampaignsService
@@ -40,7 +41,6 @@ export class CampaignDetailsComponent implements OnInit {
         }
       )
     );
-
   }
 
 }

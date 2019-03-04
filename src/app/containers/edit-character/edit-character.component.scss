@@ -1,0 +1,27 @@
+@import '../../shared/variables/variables';
+@import '../../shared/mixins/flexbox';
+
+.character-list {
+  background-color: $characterBackgroundColor;
+  color: $fontColorSecondary;
+  &-name {
+    @include flexbox($justify: center);
+    font-size: 2rem;
+  }
+  &-main {
+    @include flexbox();
+    &-trauma {
+      width: 100%;
+      @include flexbox($direction: column);
+      padding-left: 10%;
+      &-item {
+        margin-bottom: 10px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+      }
+    }
+  }
+}

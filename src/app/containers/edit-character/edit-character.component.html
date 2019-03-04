@@ -1,10 +1,14 @@
 <div class="container">
   <ul class="list-group">
     <li class="character-list list-group-item rounded">
-      <div>Name: {{character.name}}</div>
-      <div><img src="{{character.img}}"></div>
-      <div>Physical Trauma: {{character.physTrauma}}</div>
-      <div>Mental Trauma: {{character.menTrauma}}</div>
+      <div class="character-list-name">{{character?.name}}</div>
+      <div class="character-list-main">
+        <div><img src="{{character?.img}}"></div>
+        <div class="character-list-main-trauma">
+          <div class="character-list-main-trauma-item">Physical Trauma: <span *ngFor="let phys of physTrauma"><img src="../../../assets/physical.jpg"></span></div>  
+          <div class="character-list-main-trauma-item">Mental Trauma: <span *ngFor="let men of menTrauma"><img src="../../../assets/horror.jpg"></span></div>
+        </div>
+      </div>
     </li>
   </ul>
   <button (click)="goBack()" class="btn btn-danger">BACK</button>

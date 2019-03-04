@@ -1,5 +1,8 @@
+@import '../../shared/variables/variables';
+
 .campaign-details-header {
   width: 100%;
-  background-color: pink;
+  background-color: $characterBackgroundColor;
+  color: $fontColorSecondary;
   margin-bottom: 20px;
 }

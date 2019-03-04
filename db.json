@@ -1,20 +1,24 @@
 {
-  "campaigns": [{
+  "campaigns": [
+    {
       "id": 1,
       "name": "Path to Carcosa",
-      "date": "10-11-2018"
+      "date": "10-11-2018",
+      "currentScenario": "Dim Carcosa"
     },
     {
       "id": 2,
       "name": "Dunwich Legacy",
-      "date": "19-12-2014"
+      "date": "19-12-2014",
+      "currentScenario": "Blood on the Altar"
     }
   ],
-  "characters": [{
+  "characters": [
+    {
       "id": 1,
       "img": "https://arkhamdb.com/bundles/cards/01001.png",
       "name": "Roland Banks",
-      "physTrauma": 0,
+      "physTrauma": 5,
       "menTrauma": 1,
       "unusedXP": 3,
       "currentCampaignID": 1
@@ -23,13 +27,14 @@
       "id": 2,
       "img": "https://arkhamdb.com/bundles/cards/03004.png",
       "name": "Akachi Onyele",
-      "physTrauma": 0,
-      "menTrauma": 1,
+      "physTrauma": 2,
+      "menTrauma": 3,
       "unusedXP": 3,
       "currentCampaignID": 2
     }
   ],
-  "investigators": [{
+  "investigators": [
+    {
       "id": 1,
       "img": "https://arkhamdb.com/bundles/cards/01001.png",
       "name": "Roland Banks"
@@ -50,20 +55,11 @@
       "name": "Jim Culver"
     }
   ],
-  "notes": [{
+  "notes": [
+    {
       "id": 1,
       "body": "Badacze zdobyli zaufanie Ichatci",
       "currentCampaignID": 1
-    },
-    {
-      "id": 2,
-      "body": "should really give me all the treats because i smell the best and omg youand i could pee on this if i had the energy you are a captive a",
-      "currentCampaignID": 2
-    },
-    {
-      "id": 3,
-      "body": "man clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken ",
-      "currentCampaignID": 2
     },
     {
       "id": 4,
@@ -74,6 +70,41 @@
       "id": 5,
       "body": "Badacze oczyścili drogę do ruin Eztli",
       "currentCampaignID": 1
+    },
+    {
+      "body": "Robyn",
+      "currentCampaignID": 1,
+      "id": 6
+    },
+    {
+      "body": "witaxik",
+      "currentCampaignID": "1",
+      "id": 7
+    },
+    {
+      "body": "gfdgdf",
+      "currentCampaignID": "1",
+      "id": 8
+    },
+    {
+      "body": "fdfdfdfdfdfd",
+      "currentCampaignID": "1",
+      "id": 9
+    },
+    {
+      "body": "Robyn",
+      "currentCampaignID": 1,
+      "id": 10
+    },
+    {
+      "body": "Halo",
+      "currentCampaignID": 1,
+      "id": 11
+    },
+    {
+      "body": "Robyn",
+      "currentCampaignID": 2,
+      "id": 13
     }
   ]
 }

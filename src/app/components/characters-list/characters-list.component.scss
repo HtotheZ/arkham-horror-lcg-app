@@ -3,7 +3,8 @@
 
 .character-list {
   background-color: $characterBackgroundColor;
-  color: white;
+  color: $fontColorSecondary;
+  cursor: pointer;
   margin-bottom: 15px;
   @include flexbox($direction: column);
   &-header {

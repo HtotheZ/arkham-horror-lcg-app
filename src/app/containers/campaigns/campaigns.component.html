@@ -2,8 +2,8 @@
   <!-- <div [routerLink]="['campaign-details']" class="chleb list-group-item"> DUNWICH LEGACY</div> -->
   <ul *ngFor="let campaign of campaigns" class="list-group">
     <li class="campaign-list list-group-item rounded" (click)="goToCampaignDetails(campaign.id)">
-      <div>ID: {{campaign.id}}</div>
       <div>Campaign Name: {{campaign.name}}</div>
+      <div>Current Scenario: {{campaign.currentScenario}}</div>
       <div>Start Date: {{campaign.date}}</div>
     </li>
   </ul>

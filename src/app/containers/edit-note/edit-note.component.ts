@@ -27,8 +27,13 @@ export class EditNoteComponent implements OnInit {
 
   }
 
-  goBack() {
+  goBack(): void {
     this.router.navigate([`campaign-details/${this.note.currentCampaignID}`]);
+  }
+
+  deleteNote(): void {
+    this.notesService.deleteNoteById(this.note.id).subscribe();
+    this.goBack();
   }
 
 }

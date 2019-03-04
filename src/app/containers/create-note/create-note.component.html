@@ -1,4 +1,7 @@
-<p>
-  create-note works!
-</p>
-<button [routerLink]="['../']" class="btn btn-danger">BACK</button>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input type="text" id="note" formControlName="note" class="form-control">
+    <button type="submit" class="btn btn-success">SUBMIT</button>
+  </div>
+</form>
+<button (click)="goBack()" class="btn btn-danger">BACK</button>

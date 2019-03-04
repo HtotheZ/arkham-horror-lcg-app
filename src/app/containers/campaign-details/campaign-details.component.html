@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="campaign-details-header">{{campaign?.name}}</div>
+  <div class="campaign-details-header">
+    <span>{{campaign?.name}}</span>
+    <span>{{campaign?.currentScenario}}</span>
+  </div>
   <div class="row">
     <div class="col">
       <app-characters-list [characters]="characters"></app-characters-list>
