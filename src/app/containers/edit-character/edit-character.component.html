@@ -5,8 +5,26 @@
       <div class="character-list-main">
         <div><img src="{{character?.img}}"></div>
         <div class="character-list-main-trauma">
-          <div class="character-list-main-trauma-item">Physical Trauma: <span *ngFor="let phys of physTrauma"><img src="../../../assets/physical.jpg"></span></div>  
-          <div class="character-list-main-trauma-item">Mental Trauma: <span *ngFor="let men of menTrauma"><img src="../../../assets/horror.jpg"></span></div>
+          <div class="character-list-main-trauma-item">
+            <div>
+              <span>Physical Trauma: </span>
+              <span *ngFor="let phys of physTrauma"><img src="../../../assets/physical.jpg"></span>
+            </div>
+            <div>
+              <button class="btn" (click)="incrementTrauma(1)">+1</button>
+              <button class="btn" (click)="decrementTrauma(1)">-1</button>
+            </div>
+          </div>  
+          <div class="character-list-main-trauma-item">
+            <div>
+              <span>Mental Trauma: </span>
+              <span *ngFor="let men of menTrauma"><img src="../../../assets/horror.jpg"></span>
+            </div>
+            <div>
+              <button class="btn" (click)="incrementTrauma(2)">+1</button>
+              <button class="btn" (click)="decrementTrauma(2)">-1</button>
+            </div>
+          </div>
         </div>
       </div>
     </li>

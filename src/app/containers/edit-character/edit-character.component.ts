@@ -34,11 +34,23 @@ export class EditCharacterComponent implements OnInit {
         ));
   }
 
-  goBack() {
+  goBack(): void {
     this.location.back();
   }
 
-  chleb() {
-    console.log(this.physTrauma);
+  incrementTrauma(type: number): void {
+    if (type === 1) {
+      this.physTrauma.push(null);
+    } else {
+      this.menTrauma.push(null);
+    }
+  }
+
+  decrementTrauma(type: number): void {
+    if (type === 1) {
+      this.physTrauma.pop();
+    } else {
+      this.menTrauma.pop();
+    }
   }
 }

@@ -30,7 +30,7 @@ export class CreateNoteComponent implements OnInit {
     })
   }
 
-  onSubmit() {
+  onSubmit(): void {
     const campaignID = parseInt(this.currentCampaignID);
     this.noteData = {
       body: this.profileForm.value.note,
@@ -40,7 +40,7 @@ export class CreateNoteComponent implements OnInit {
     this.location.back();
   }
 
-  goBack() {
+  goBack(): void {
     this.location.back();
   }
 }

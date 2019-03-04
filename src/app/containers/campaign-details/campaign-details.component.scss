@@ -13,6 +13,7 @@
   }
   &-header {
     width: 100%;
+    @include flexbox($justify: space-between);
     background-color: $characterBackgroundColor;
     color: $fontColorSecondary;
     margin-bottom: 20px;
