@@ -1,6 +1,6 @@
 <ul *ngFor="let character of characters" class="list-group">
   <li class="character-list list-group-item rounded" (click)="editCharacter(character.id)">
-    <div class="character-list-header">Name: {{character?.name}}</div>
+    <div class="character-list-header">{{character?.name}}</div>
     <div class="character-list-body">
       <div><img src="{{character?.img}}"></div>
       <div>

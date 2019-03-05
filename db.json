@@ -31,6 +31,33 @@
       "menTrauma": 3,
       "unusedXP": 3,
       "currentCampaignID": 2
+    },
+    {
+      "name": "Rex Murphy",
+      "img": "https://arkhamdb.com/bundles/cards/02002.png",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 1,
+      "id": 3
+    },
+    {
+      "name": "Sefina Rousseau",
+      "img": "https://arkhamdb.com/bundles/cards/03003.png",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 1,
+      "id": 4
+    },
+    {
+      "name": "\"Skids\" O'Toole",
+      "img": "https://arkhamdb.com/bundles/cards/01003.png",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 2,
+      "id": 5
     }
   ],
   "investigators": [
@@ -40,19 +67,94 @@
       "name": "Roland Banks"
     },
     {
-      "id": 2,
-      "img": "https://arkhamdb.com/bundles/cards/03004.png",
-      "name": "Akachi Onyele"
+      "name": "Daisy Walker",
+      "img": "https://arkhamdb.com/bundles/cards/01002.png",
+      "id": 2
     },
     {
-      "id": 3,
-      "img": "https://arkhamdb.com/bundles/cards/04001.png",
-      "name": "Leo Anderson"
+      "name": "\"Skids\" O'Toole",
+      "img": "https://arkhamdb.com/bundles/cards/01003.png",
+      "id": 3
     },
     {
-      "id": 4,
+      "name": "Agnes Baker",
+      "img": "https://arkhamdb.com/bundles/cards/01004.png",
+      "id": 4
+    },
+    {
+      "name": "Wendy Adams",
+      "img": "https://arkhamdb.com/bundles/cards/01005.png",
+      "id": 5
+    },
+    {
+      "name": "Zoey Samaras",
+      "img": "https://arkhamdb.com/bundles/cards/02001.png",
+      "id": 6
+    },
+    {
+      "name": "Rex Murphy",
+      "img": "https://arkhamdb.com/bundles/cards/02002.png",
+      "id": 7
+    },
+    {
+      "name": "Jenny Barnes",
+      "img": "https://arkhamdb.com/bundles/cards/02003.png",
+      "id": 8
+    },
+    {
+      "name": "Jim Culver",
       "img": "https://arkhamdb.com/bundles/cards/02004.png",
-      "name": "Jim Culver"
+      "id": 9
+    },
+    {
+      "name": "\"Ashcan\" Pete",
+      "img": "https://arkhamdb.com/bundles/cards/02005.png",
+      "id": 10
+    },
+    {
+      "name": "Mark Harrigan",
+      "img": "https://arkhamdb.com/bundles/cards/03001.png",
+      "id": 11
+    },
+    {
+      "name": "Minh Thi Phan",
+      "img": "https://arkhamdb.com/bundles/cards/03002.png",
+      "id": 12
+    },
+    {
+      "name": "Sefina Rousseau",
+      "img": "https://arkhamdb.com/bundles/cards/03003.png",
+      "id": 13
+    },
+    {
+      "name": "Akachi Onyele",
+      "img": "https://arkhamdb.com/bundles/cards/03004.png",
+      "id": 14
+    },
+    {
+      "name": "William Yorick",
+      "img": "https://arkhamdb.com/bundles/cards/03005.png",
+      "id": 15
+    },
+    {
+      "name": "Lola Hayes",
+      "img": "https://arkhamdb.com/bundles/cards/03006.png",
+      "id": 16
+    },
+    {
+      "name": "Leo Anderson",
+      "img": "https://arkhamdb.com/bundles/cards/04001.png",
+      "id": 17
+    },
+    {
+      "name": "Ursula Downs",
+      "img": "https://arkhamdb.com/bundles/cards/04002.png",
+      "id": 18
+    },
+    {
+      "name": "Finn Edwards",
+      "img": "https://arkhamdb.com/bundles/cards/04003.png",
+      "id": 19
     }
   ],
   "notes": [
@@ -88,16 +190,6 @@
     },
     {
       "body": "Robyn",
-      "currentCampaignID": 1,
-      "id": 10
-    },
-    {
-      "body": "Halo",
-      "currentCampaignID": 1,
-      "id": 11
-    },
-    {
-      "body": "Robyn",
       "currentCampaignID": 2,
       "id": 13
     },
@@ -105,16 +197,6 @@
       "body": "Halo",
       "currentCampaignID": 2,
       "id": 15
-    },
-    {
-      "body": "gf gf g fg f gfg f gfg fh dfh dgh dj gd j ghdir jotueiyagruaby gi y fodua o yoa fou oafg bou ",
-      "currentCampaignID": 2,
-      "id": 19
-    },
-    {
-      "body": "Robyn",
-      "currentCampaignID": 2,
-      "id": 20
     }
   ]
 }

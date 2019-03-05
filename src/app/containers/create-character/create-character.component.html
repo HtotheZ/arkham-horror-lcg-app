@@ -1,13 +1,37 @@
 <div class="container">
-  <div class="form-group">
-    <span class="text-primary">* </span><label class="font-weight-bold" for="investigatorSelection">Choose Investigator</label>
-    <select class="form-control" id="investigatorSelection">
-      <option *ngFor="let investigator of investigators">{{investigator.name}}</option>
-    </select>
-    <!-- <div *ngIf="!addCharacterForm.get('species').valid && addCharacterForm.get('species').touched">
-      <div class="text-danger">required - This field is required</div>
-    </div> -->
+  <div class="forms">
+    <div class="char-form-wrapper">
+      <form [formGroup]="characterForm" (ngSubmit)="onCharacterFormSubmit()">
+        <div class="form-group">
+          <span class="text-primary">* </span><label class="text" for="investigatorSelection">Choose Investigator</label>
+          <select class="form-control" id="investigatorSelection" formControlName="investigatorSelection" (change)="onSelect($event)">
+            <option *ngFor="let investigator of investigators" value="{{investigator.id}}">{{investigator.name}}</option>
+          </select>
+          <div><img src="{{selectedCharacterClass?.img}}"></div>
+          <button type="submit" class="btn btn-success">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  
+    <div class="inv-form-wrapper">
+      <form [formGroup]="investigatorForm" (ngSubmit)="onInvestigatorFormSubmit()">
+        <div class="form-group">
+          <input type="text" id="investigator" formControlName="investigator" class="form-control">
+          <input type="text" id="linkImg" formControlName="linkImg" class="form-control">
+          <button type="submit" class="btn btn-success">SUBMIT</button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div><img src="{{investigator?.img}}"></div>
+  
   <button (click)="goBack()" class="btn btn-danger">BACK</button>
 </div>
+<!-- <div class="container">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input type="text" id="note" formControlName="note" class="form-control">
+      <button type="submit" class="btn btn-success">SUBMIT</button>
+    </div>
+  </form>
+  <button (click)="goBack()" class="btn btn-danger">BACK</button>
+</div> -->

@@ -33,10 +33,10 @@ export class CampaignDetailsComponent implements OnInit {
         (campaign: Campaign) => {
           this.campaign = campaign;
           this.charactersService.getCharacters().subscribe(
-            (characters: Character[]) => this.characters = characters.filter(x => x.currentCampaignID === this.campaign.id)
+            (characters: Character[]) => this.characters = characters.filter(char => char.currentCampaignID === this.campaign.id)
           );
           this.notesService.getNotes().subscribe(
-            (notes: Note[]) => this.notes = notes.filter(x => x.currentCampaignID === this.campaign.id)
+            (notes: Note[]) => this.notes = notes.filter(note => note.currentCampaignID === this.campaign.id)
           );
         }
       )

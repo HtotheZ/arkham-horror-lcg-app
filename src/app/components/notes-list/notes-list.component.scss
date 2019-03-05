@@ -14,9 +14,8 @@
       font-size: 1.2rem;
       word-wrap: break-word;
     }
-    
-    // .buttons-section {
-    //   @include flexbox($justify: flex-end);
-    // }
+  }
+  .notes-list-item:hover {
+    background-color: $notesBackgroundColorSecondary;
   }
 }

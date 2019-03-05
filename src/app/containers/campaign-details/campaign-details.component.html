@@ -1,7 +1,10 @@
 <div class="container">
   <div class="campaign-details-header">
-    <span>{{campaign?.name}}</span>
-    <span>{{campaign?.currentScenario}}</span>
+    <span class="campaign-details-header-name">{{campaign?.name}}</span>
+    <div class="campaign-details-header-scenario">
+      <span>Current Scenario: {{campaign?.currentScenario}}</span>
+      <button class="btn">CHANGE SCENARIO</button>
+    </div>
   </div>
   <div class="campaign-details-main">
     <div class="campaign-details-main-char">
@@ -10,7 +13,7 @@
     </div>
     <div class="campaign-details-main-notes">
       <app-notes-list [notes]="notes"></app-notes-list>
-      <button [routerLink]="['add-note']" class="btn btn-success">ADD A NEW NOTE</button>
+      <button [routerLink]="['add-note']" class="btn">ADD A NEW NOTE</button>
     </div>
   </div>
   <button [routerLink]="['']" class="btn btn-danger">BACK TO CAMPAIGN SELECTION</button>

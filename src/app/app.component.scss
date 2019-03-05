@@ -18,6 +18,7 @@
     margin-bottom: 10px;
     &-text {
       @include flexbox($align: center, $justify: center);
+      color: $fontColorTitle;
     }
   }
 }

@@ -26,3 +26,7 @@
     @include flexbox($justify: center);
   }
 }
+
+.character-list:hover {
+  background-color: $characterBackgroundColorSecondary;
+}

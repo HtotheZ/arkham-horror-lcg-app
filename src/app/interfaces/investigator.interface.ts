@@ -1,5 +1,5 @@
 export interface Investigator {
-  id: number;
+  id?: number;
   img: string;
   name: string;
 }

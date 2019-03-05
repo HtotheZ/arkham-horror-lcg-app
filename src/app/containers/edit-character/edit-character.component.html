@@ -14,7 +14,8 @@
               <button class="btn" (click)="incrementTrauma(1)">+1</button>
               <button class="btn" (click)="decrementTrauma(1)">-1</button>
             </div>
-          </div>  
+          </div>
+  
           <div class="character-list-main-trauma-item">
             <div>
               <span>Mental Trauma: </span>
@@ -25,6 +26,18 @@
               <button class="btn" (click)="decrementTrauma(2)">-1</button>
             </div>
           </div>
+
+          <div class="character-list-main-trauma-xp">
+            <div>
+              <span>Unused XP: </span>
+              <span>{{character?.unusedXP}}</span>              
+            </div>
+            <div>
+              <button class="btn" (click)="incrementXP()">+1</button>
+              <button class="btn" (click)="decrementXP()">-1</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </li>

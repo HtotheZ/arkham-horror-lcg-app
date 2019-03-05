@@ -53,4 +53,12 @@ export class EditCharacterComponent implements OnInit {
       this.menTrauma.pop();
     }
   }
+
+  incrementXP(): void {
+    this.character.unusedXP++;
+  }
+
+  decrementXP(): void {
+    this.character.unusedXP--;
+  }
 }

@@ -27,11 +27,11 @@ export class CreateNoteComponent implements OnInit {
     this.route.params.subscribe(params => this.currentCampaignID = params.id);
     this.profileForm = new FormGroup({
       'note': new FormControl(null)
-    })
+    });
   }
 
   onSubmit(): void {
-    const campaignID = parseInt(this.currentCampaignID);
+    const campaignID = parseInt(this.currentCampaignID, null);
     this.noteData = {
       body: this.profileForm.value.note,
       currentCampaignID: campaignID

@@ -1,0 +1,18 @@
+@import '../../shared/variables/variables';
+@import '../../shared/mixins/flexbox';
+
+input {
+  background-color: $notesBackgroundColor;
+}
+
+input:hover {
+  background-color: $notesBackgroundColorSecondary;
+}
+
+input:checked {
+  background-color: $notesBackgroundColor;
+}
+
+input:focus {
+  background-color: $notesBackgroundColorSecondary;
+}
