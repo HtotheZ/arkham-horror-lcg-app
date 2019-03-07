@@ -15,15 +15,6 @@
   ],
   "characters": [
     {
-      "id": 1,
-      "img": "https://arkhamdb.com/bundles/cards/01001.png",
-      "name": "Roland Banks",
-      "physTrauma": 5,
-      "menTrauma": 1,
-      "unusedXP": 3,
-      "currentCampaignID": 1
-    },
-    {
       "id": 2,
       "img": "https://arkhamdb.com/bundles/cards/03004.png",
       "name": "Akachi Onyele",
@@ -33,31 +24,31 @@
       "currentCampaignID": 2
     },
     {
-      "name": "Rex Murphy",
-      "img": "https://arkhamdb.com/bundles/cards/02002.png",
+      "id": 5,
+      "img": "https://arkhamdb.com/bundles/cards/04002.png",
+      "name": "Ursula Downs",
       "physTrauma": 0,
       "menTrauma": 0,
-      "unusedXP": 0,
-      "currentCampaignID": 1,
-      "id": 3
+      "unusedXP": 1,
+      "currentCampaignID": 2
     },
     {
-      "name": "Sefina Rousseau",
-      "img": "https://arkhamdb.com/bundles/cards/03003.png",
-      "physTrauma": 0,
-      "menTrauma": 0,
-      "unusedXP": 0,
-      "currentCampaignID": 1,
-      "id": 4
+      "id": 7,
+      "img": "https://arkhamdb.com/bundles/cards/01002.png",
+      "name": "Daisy Walker",
+      "physTrauma": 3,
+      "menTrauma": 3,
+      "unusedXP": 3,
+      "currentCampaignID": 1
     },
     {
-      "name": "\"Skids\" O'Toole",
-      "img": "https://arkhamdb.com/bundles/cards/01003.png",
+      "name": "Lola Hayes",
+      "img": "https://arkhamdb.com/bundles/cards/03006.png",
       "physTrauma": 0,
       "menTrauma": 0,
       "unusedXP": 0,
       "currentCampaignID": 2,
-      "id": 5
+      "id": 9
     }
   ],
   "investigators": [
@@ -159,16 +150,6 @@
   ],
   "notes": [
     {
-      "id": 1,
-      "body": "Badacze zdobyli zaufanie Ichatci",
-      "currentCampaignID": 1
-    },
-    {
-      "id": 4,
-      "body": "Alejandro kontynuuje badania na własną rękę",
-      "currentCampaignID": 1
-    },
-    {
       "id": 5,
       "body": "Badacze oczyścili drogę do ruin Eztli",
       "currentCampaignID": 1
@@ -189,14 +170,39 @@
       "id": 9
     },
     {
-      "body": "Robyn",
-      "currentCampaignID": 2,
-      "id": 13
+      "body": "hfgfjhgjg",
+      "currentCampaignID": 1,
+      "id": 18
     },
     {
-      "body": "Halo",
+      "body": "hgugug",
+      "currentCampaignID": 1,
+      "id": 20
+    },
+    {
+      "body": "Robyn",
       "currentCampaignID": 2,
-      "id": 15
+      "id": 21
+    },
+    {
+      "body": "dsdsdsdsdds",
+      "currentCampaignID": 2,
+      "id": 22
+    },
+    {
+      "body": "dff",
+      "currentCampaignID": 2,
+      "id": 23
+    },
+    {
+      "body": "fddjfdjnf",
+      "currentCampaignID": 2,
+      "id": 24
+    },
+    {
+      "body": "fdfdfdfdffd",
+      "currentCampaignID": 2,
+      "id": 25
     }
   ]
 }

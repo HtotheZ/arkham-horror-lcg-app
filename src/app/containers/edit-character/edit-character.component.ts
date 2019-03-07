@@ -34,15 +34,32 @@ export class EditCharacterComponent implements OnInit {
         ));
   }
 
-  goBack(): void {
-    this.location.back();
+  editCharacter(): void {
+    const characterData = {
+      id: this.character.id,
+      img: this.character.img,
+      name: this.character.name,
+      physTrauma: this.physTrauma.length,
+      menTrauma: this.menTrauma.length,
+      unusedXP: this.character.unusedXP,
+      currentCampaignID: this.character.currentCampaignID
+    }
+    this.charactersService.editCharacterById(characterData).subscribe();
+    this.goBack();
+  }
+
+  deleteCharacter(): void {
+    this.charactersService.deleteCharacterById(this.character.id).subscribe();
+    this.goBack();
   }
 
   incrementTrauma(type: number): void {
-    if (type === 1) {
-      this.physTrauma.push(null);
-    } else {
-      this.menTrauma.push(null);
+    if (this.physTrauma.length < 14 && this.menTrauma.length < 14) {
+      if (type === 1) {
+        this.physTrauma.push(null);
+      } else {
+        this.menTrauma.push(null);
+      }
     }
   }
 
@@ -60,5 +77,9 @@ export class EditCharacterComponent implements OnInit {
 
   decrementXP(): void {
     this.character.unusedXP--;
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }

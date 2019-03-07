@@ -16,3 +16,13 @@ input:checked {
 input:focus {
   background-color: $notesBackgroundColorSecondary;
 }
+
+
+.btn-back {
+  margin: 10px 10px 0 0;
+  background-color: $buttonBackgroundColorBack;
+  color: $fontColorSecondary;
+}
+.btn-back:hover {
+  background-color: $buttonBackgroundColorBackHover;
+}

@@ -16,9 +16,9 @@ export class CreateCharacterComponent implements OnInit {
   currentCampaignID: string;
   investigators: Investigator[];
   investigatorForm: FormGroup;
-  characterForm: FormGroup;
   investigatorData: Investigator;
   characterData: Character;
+  characterForm: FormGroup;
   selectedCharacterClass: Investigator;
 
   constructor(

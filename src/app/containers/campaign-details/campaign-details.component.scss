@@ -1,40 +1,73 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
 
-.campaign-details {
-  &-main {
-    @include flexbox($justify: space-between);
-    &-char {
-      width: 49%;
+.container {
+  .campaign-details {
+    &-main {
+      @include flexbox($justify: space-between);
+      &-char {
+        width: 49%;
+        .btn {
+          background-color: $buttonBackgroundColorSecondary;
+          color: $fontColorSecondary;
+          margin-bottom: 30px;
+        }
+      }
+      &-notes {
+        width: 49%;
+        .btn {
+          background-color: $buttonBackgroundColorSecondary;
+          color: $fontColorSecondary;
+        }
+      }
     }
-    &-notes {
-      width: 49%;
-      .btn {
-        background-color: $buttonBackgroundColorSecondary;
+    &-header {
+      width: 100%;
+      @include flexbox($justify: space-between, $align: center);
+      background-color: $itemBackgroundColorSecondary;
+      color: $fontColorPrimary;
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+      &-name {
+        cursor: auto;
+      }
+      &-scenario {
+        @include flexbox($direction: row, $align: center);
+        span {
+          font-size: 1.3rem;
+          margin-right: 10px;
+        }
+        .btn {
+          background-color: $buttonBackgroundColor;
+          color: $fontColorSecondary;
+        }
       }
     }
   }
-  &-header {
-    width: 100%;
-    @include flexbox($justify: space-between, $align: center);
-    background-color: $itemBackgroundColorSecondary;
-    color: $fontColorPrimary;
-    margin-bottom: 20px;
-    font-size: 2.4rem;
-    &-name {
-      cursor: auto;
-    }
-    &-scenario {
-      @include flexbox($direction: row, $align: center);
-      span {
-        font-size: 1.3rem;
-        margin-right: 10px;
-      }
-      .btn {
-        background-color: $buttonBackgroundColor;
-        color: $fontColorSecondary;
-      }
-    }
+  .btn-back {
+    background-color: $buttonBackgroundColorBack;
+    color: $fontColorSecondary;
   }
+  .btn-back:hover {
+    background-color: $buttonBackgroundColorBackHover;
+  }
+}
+
+input {
+  background-color: $notesBackgroundColor;
+  border: none;
+  padding: 2px;
+}
+
+input:hover {
+  background-color: $notesBackgroundColorSecondary;
+}
+
+input:checked {
+  background-color: $notesBackgroundColor;
+}
+
+input:focus {
+  background-color: $notesBackgroundColorSecondary;
 }
 

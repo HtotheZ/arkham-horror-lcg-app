@@ -24,6 +24,14 @@ export class CharactersService {
     return this.http.post('api/characters', character);
   }
 
+  editCharacterById(character: Character) {
+    return this.http.put(`api/characters/${character.id}`, character);
+  }
+
+  deleteCharacterById(id: number) {
+    return this.http.delete(`api/characters/${id}`);
+  }
+
   getInvestigators() {
     return this.http.get('api/investigators');
   }

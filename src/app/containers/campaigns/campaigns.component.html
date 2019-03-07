@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="header">
+    <span>Welcome to Arkham Horror LCG companion app. A tool for manage your campaigns: character status, notes and more. Start by creating new campaign or choose existing one:</span>
+  </div>
   <ul *ngFor="let campaign of campaigns" class="list-group">
     <li class="campaign-list list-group-item rounded" (click)="goToCampaignDetails(campaign.id)">
       <div>Campaign Name: {{campaign.name}}</div>
@@ -6,5 +9,5 @@
       <div>Start Date: {{campaign.date}}</div>
     </li>
   </ul>
-  <button [routerLink]="['create-campaign']" class="btn btn-success">NEW CAMPAIGN</button>
+  <button [routerLink]="['create-campaign']" class="btn">NEW CAMPAIGN</button>
 </div>

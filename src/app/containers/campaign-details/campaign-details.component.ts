@@ -18,6 +18,8 @@ export class CampaignDetailsComponent implements OnInit {
   campaign: Campaign;
   characters: Character[];
   notes: Note[];
+  isEditScenario: boolean;
+  currentScenario: string;
 
   constructor(
     private charactersService: CharactersService,
@@ -38,9 +40,14 @@ export class CampaignDetailsComponent implements OnInit {
           this.notesService.getNotes().subscribe(
             (notes: Note[]) => this.notes = notes.filter(note => note.currentCampaignID === this.campaign.id)
           );
+          this.currentScenario = this.campaign.currentScenario;
         }
       )
     );
   }
 
+  changeScenario(): void {
+    this.campaign.currentScenario = this.currentScenario;
+    this.isEditScenario = !this.isEditScenario;
+  }
 }

@@ -1,35 +1,62 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
 
-.character-list {
-  background-color: $characterBackgroundColor;
-  color: $fontColorSecondary;
-  &-name {
-    @include flexbox($justify: center);
-    font-size: 2rem;
+.container {
+  .character-list {
+    background-color: $characterBackgroundColor;
+    color: $fontColorSecondary;
+    &-name {
+      @include flexbox($justify: center);
+      font-size: 2rem;
+    }
+    &-main {
+      @include flexbox();
+      &-trauma {
+        width: 100%;
+        @include flexbox($direction: column);
+        padding-left: 10%;
+        &-item {
+          width: 100%;
+          height: 80px;
+          @include flexbox($justify: space-between);
+          margin-bottom: 30px;
+        }
+        &-xp {
+          width: 100%;
+          height: 80px;
+          @include flexbox($justify: space-between);
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+        }
+        .trauma-section {
+          width: 80%;
+        }
+        .buttons-incdec {
+          width: 20%;
+          height: 100%;
+          .btn-incdec {
+            background-color: $buttonBackgroundColorSecondary;
+            color: $fontColorPrimary;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
   }
-  &-main {
-    @include flexbox();
-    &-trauma {
-      width: 100%;
-      @include flexbox($direction: column);
-      padding-left: 10%;
-      &-item {
-        width: 100%;
-        height: 80px;
-        @include flexbox($justify: space-between);
-        margin-bottom: 10px;
-      }
-      &-xp {
-        width: 100%;
-        height: 80px;
-        @include flexbox($justify: space-between);
-      }
-      img {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-      }
+  .buttons-section {
+    @include flexbox($justify: space-between);
+    .btn-submit {
+      margin-top: 10px;
+      background-color: $buttonBackgroundColor;
+      color: $fontColorSecondary;
+    }
+    .btn-back {
+      margin: 10px 10px 0 0;
+      background-color: $buttonBackgroundColorBack;
+      color: $fontColorSecondary;
     }
   }
 }

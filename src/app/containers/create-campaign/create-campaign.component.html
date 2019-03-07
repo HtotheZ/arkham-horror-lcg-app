@@ -1,4 +1,13 @@
 <div class="container">
-  <div>CTHULHU FGHATN</div>
+  <div class="campaign-form-wrapper">
+    <form [formGroup]="campaignForm" (ngSubmit)="onCharacterFormSubmit()">
+      <div class="form-group">
+        <span class="text-primary">* </span><label class="text" for="investigatorSelection">Campaign Name: </label>
+        <input type="text">
+        <div><img src="{{selectedCharacterClass?.img}}"></div>
+        <button type="submit" class="btn btn-success">SUBMIT</button>
+      </div>
+    </form>
+  </div>
   <button (click)="goBack()" class="btn btn-danger">BACK</button>
 </div>

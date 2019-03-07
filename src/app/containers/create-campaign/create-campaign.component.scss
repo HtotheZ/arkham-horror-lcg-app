@@ -1,0 +1,13 @@
+@import '../../shared/variables/variables';
+@import '../../shared/mixins/flexbox';
+
+.campaign-form-wrapper {
+  width: 100%;
+  background-color: $characterBackgroundColor;
+  padding: 5px;
+  .form-group {
+    .text {
+      color: $fontColorSecondary;
+    }
+  }
+}

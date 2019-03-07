@@ -6,24 +6,24 @@
         <div><img src="{{character?.img}}"></div>
         <div class="character-list-main-trauma">
           <div class="character-list-main-trauma-item">
-            <div>
+            <div class="trauma-section">
               <span>Physical Trauma: </span>
               <span *ngFor="let phys of physTrauma"><img src="../../../assets/physical.jpg"></span>
             </div>
-            <div>
-              <button class="btn" (click)="incrementTrauma(1)">+1</button>
-              <button class="btn" (click)="decrementTrauma(1)">-1</button>
+            <div class="buttons-incdec">
+              <button class="btn btn-incdec" (click)="decrementTrauma(1)">-1</button>
+              <button class="btn btn-incdec" (click)="incrementTrauma(1)">+1</button>
             </div>
           </div>
   
           <div class="character-list-main-trauma-item">
-            <div>
+            <div class="trauma-section">
               <span>Mental Trauma: </span>
               <span *ngFor="let men of menTrauma"><img src="../../../assets/horror.jpg"></span>
             </div>
-            <div>
-              <button class="btn" (click)="incrementTrauma(2)">+1</button>
-              <button class="btn" (click)="decrementTrauma(2)">-1</button>
+            <div class="buttons-incdec">
+              <button class="btn btn-incdec" (click)="decrementTrauma(2)">-1</button>
+              <button class="btn btn-incdec" (click)="incrementTrauma(2)">+1</button>
             </div>
           </div>
 
@@ -32,9 +32,9 @@
               <span>Unused XP: </span>
               <span>{{character?.unusedXP}}</span>              
             </div>
-            <div>
-              <button class="btn" (click)="incrementXP()">+1</button>
-              <button class="btn" (click)="decrementXP()">-1</button>
+            <div class="buttons-incdec"> 
+              <button class="btn btn-incdec" (click)="decrementXP()">-1</button>
+              <button class="btn btn-incdec" (click)="incrementXP()">+1</button>
             </div>
           </div>
 
@@ -42,5 +42,11 @@
       </div>
     </li>
   </ul>
-  <button (click)="goBack()" class="btn btn-danger">BACK</button>
+  <div class="buttons-section">
+    <div>
+      <button (click)="goBack()" class="btn btn-back">BACK</button>
+      <button (click)="deleteCharacter()" class="btn btn-back">KILL CHARACTER!</button>
+    </div>
+    <button (click)="editCharacter()" class="btn btn-submit">SAVE</button>
+  </div>
 </div>
