@@ -1,5 +1,5 @@
 export interface Campaign {
-  id: number;
+  id?: number;
   name: string;
   date: string;
   currentScenario: string;

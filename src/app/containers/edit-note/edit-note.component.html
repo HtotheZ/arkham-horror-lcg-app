@@ -1,7 +1,7 @@
 <div class="container">
   <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <input type="text" id="note" value="{{note?.body}}" formControlName="note" class="form-control">
+      <input type="text" id="note" value="{{note.body}}" formControlName="note" class="form-control">
       <button type="submit" class="btn btn-success">SUBMIT</button>
     </div>
     <button (click)="goBack()" class="btn btn-back">BACK</button>

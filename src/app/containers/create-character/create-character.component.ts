@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CharactersService } from 'src/app/services/characters.service';
-import { Investigator } from 'src/app/interfaces/investigator.interface';
 import { Location } from '@angular/common';
 import { FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+
+import { CharactersService } from 'src/app/services/characters.service';
+import { Investigator } from 'src/app/interfaces/investigator.interface';
 import { Character } from 'src/app/interfaces/character.interface';
 
 @Component({

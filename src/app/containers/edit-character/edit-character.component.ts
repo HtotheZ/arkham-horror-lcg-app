@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
+
 import { Character } from 'src/app/interfaces/character.interface';
 import { CharactersService } from 'src/app/services/characters.service';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-edit-character',
@@ -43,8 +44,8 @@ export class EditCharacterComponent implements OnInit {
       menTrauma: this.menTrauma.length,
       unusedXP: this.character.unusedXP,
       currentCampaignID: this.character.currentCampaignID
-    }
-    this.charactersService.editCharacterById(characterData).subscribe();
+    };
+    this.charactersService.editCharacter(characterData).subscribe();
     this.goBack();
   }
 

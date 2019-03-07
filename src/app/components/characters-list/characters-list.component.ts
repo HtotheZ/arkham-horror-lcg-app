@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { Character } from 'src/app/interfaces/character.interface';
 import { Router, ActivatedRoute } from '@angular/router';
+
+import { Character } from 'src/app/interfaces/character.interface';
+
 
 @Component({
   selector: 'app-characters-list',

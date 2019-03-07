@@ -27,13 +27,15 @@
       background-color: $itemBackgroundColorSecondary;
       color: $fontColorPrimary;
       margin-bottom: 20px;
+      padding: 10px;
       font-size: 2.4rem;
       &-name {
         cursor: auto;
+        margin-right: 10px;
       }
       &-scenario {
         @include flexbox($direction: row, $align: center);
-        span {
+        .span-header-text {
           font-size: 1.3rem;
           margin-right: 10px;
         }
@@ -44,12 +46,15 @@
       }
     }
   }
-  .btn-back {
-    background-color: $buttonBackgroundColorBack;
-    color: $fontColorSecondary;
-  }
-  .btn-back:hover {
-    background-color: $buttonBackgroundColorBackHover;
+  .buttons-section {
+    @include flexbox($justify: space-between);
+    .btn-back {
+      background-color: $buttonBackgroundColorBack;
+      color: $fontColorSecondary;
+    }
+    .btn-back:hover {
+      background-color: $buttonBackgroundColorBackHover;
+    }
   }
 }
 

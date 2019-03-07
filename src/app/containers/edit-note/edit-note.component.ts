@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Note } from 'src/app/interfaces/note.interface';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { NotesService } from 'src/app/services/notes.service';
-import { CampaignsService } from 'src/app/services/campaigns.service';
 import { FormGroup, FormControl } from '@angular/forms';
+
+import { Note } from 'src/app/interfaces/note.interface';
+import { NotesService } from 'src/app/services/notes.service';
 
 @Component({
   selector: 'app-edit-note',
@@ -29,6 +29,9 @@ export class EditNoteComponent implements OnInit {
     this.profileForm = new FormGroup({
       'note': new FormControl(null)
     });
+    this.profileForm.setValue({
+      'note': this.note.body
+    });
   }
 
   goBack(): void {
@@ -36,6 +39,12 @@ export class EditNoteComponent implements OnInit {
   }
 
   onSubmit(): void {
+    const note = {
+      id: this.note.id,
+      body: this.profileForm.value.note,
+      currentCampaignID: this.note.currentCampaignID
+    };
+    this.notesService.editNote(note).subscribe();
     this.goBack();
   }
 

@@ -24,31 +24,22 @@
       "currentCampaignID": 2
     },
     {
-      "id": 5,
-      "img": "https://arkhamdb.com/bundles/cards/04002.png",
-      "name": "Ursula Downs",
-      "physTrauma": 0,
-      "menTrauma": 0,
-      "unusedXP": 1,
-      "currentCampaignID": 2
-    },
-    {
       "id": 7,
       "img": "https://arkhamdb.com/bundles/cards/01002.png",
       "name": "Daisy Walker",
       "physTrauma": 3,
-      "menTrauma": 3,
-      "unusedXP": 3,
+      "menTrauma": 4,
+      "unusedXP": 2,
       "currentCampaignID": 1
     },
     {
-      "name": "Lola Hayes",
-      "img": "https://arkhamdb.com/bundles/cards/03006.png",
+      "id": 10,
+      "img": "https://arkhamdb.com/bundles/cards/03005.png",
+      "name": "William Yorick",
       "physTrauma": 0,
-      "menTrauma": 0,
+      "menTrauma": 4,
       "unusedXP": 0,
-      "currentCampaignID": 2,
-      "id": 9
+      "currentCampaignID": 1
     }
   ],
   "investigators": [
@@ -146,6 +137,11 @@
       "name": "Finn Edwards",
       "img": "https://arkhamdb.com/bundles/cards/04003.png",
       "id": 19
+    },
+    {
+      "name": "fdfd",
+      "img": "dfdf",
+      "id": 20
     }
   ],
   "notes": [
@@ -170,24 +166,14 @@
       "id": 9
     },
     {
-      "body": "hfgfjhgjg",
-      "currentCampaignID": 1,
-      "id": 18
-    },
-    {
-      "body": "hgugug",
-      "currentCampaignID": 1,
-      "id": 20
+      "id": 18,
+      "body": "fd",
+      "currentCampaignID": 1
     },
     {
       "body": "Robyn",
       "currentCampaignID": 2,
       "id": 21
-    },
-    {
-      "body": "dsdsdsdsdds",
-      "currentCampaignID": 2,
-      "id": 22
     },
     {
       "body": "dff",
@@ -203,6 +189,11 @@
       "body": "fdfdfdfdffd",
       "currentCampaignID": 2,
       "id": 25
+    },
+    {
+      "body": "fdfd",
+      "currentCampaignID": 3,
+      "id": 26
     }
   ]
 }

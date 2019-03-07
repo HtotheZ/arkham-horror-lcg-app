@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Campaign } from 'src/app/interfaces/campaign.interface';
 import { CampaignsService } from 'src/app/services/campaigns.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-campaigns',

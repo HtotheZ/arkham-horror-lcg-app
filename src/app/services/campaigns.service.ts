@@ -21,7 +21,11 @@ export class CampaignsService {
   }
 
   addNewCampaign(campaign: Campaign) {
-    return this.http.post('/api/campaigns', campaign)
+    return this.http.post('/api/campaigns', campaign);
+  }
+
+  deleteNoteById(id: number) {
+    return this.http.delete(`api/campaigns/${id}`);
   }
 
 }

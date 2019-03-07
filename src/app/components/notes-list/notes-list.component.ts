@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Note } from 'src/app/interfaces/note.interface';
 import { Router, ActivatedRoute } from '@angular/router';
+
+import { Note } from 'src/app/interfaces/note.interface';
 
 @Component({
   selector: 'app-notes-list',

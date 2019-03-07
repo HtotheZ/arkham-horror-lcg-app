@@ -23,7 +23,11 @@ export class NotesService {
     return this.http.post('api/notes', note);
   }
 
-  deleteNoteById(id:number) {
+  editNote(note: Note) {
+    return this.http.put(`api/notes/${note.id}`, note);
+  }
+
+  deleteNoteById(id: number) {
     return this.http.delete(`api/notes/${id}`);
   }
 }

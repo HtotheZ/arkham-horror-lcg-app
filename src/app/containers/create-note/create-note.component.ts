@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { NotesService } from 'src/app/services/notes.service';
-import { Note } from 'src/app/interfaces/note.interface';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { FormGroup, FormControl } from '@angular/forms';
+
+import { NotesService } from 'src/app/services/notes.service';
+import { Note } from 'src/app/interfaces/note.interface';
 
 @Component({
   selector: 'app-create-note',

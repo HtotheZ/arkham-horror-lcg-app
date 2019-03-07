@@ -11,3 +11,33 @@
     }
   }
 }
+
+input {
+  background-color: $notesBackgroundColor;
+  margin-bottom: 8px;
+}
+input:hover {
+  background-color: $notesBackgroundColorSecondary;
+}
+input:checked {
+  background-color: $notesBackgroundColor;
+}
+input:focus {
+  background-color: $notesBackgroundColorSecondary;
+}
+
+.btn-back {
+  margin: 10px 10px 0 0;
+  background-color: $buttonBackgroundColorBack;
+  color: $fontColorSecondary;
+}
+.btn-back:hover {
+  background-color: $buttonBackgroundColorBackHover;
+}
+.btn-success {
+  background-color: $buttonBackgroundColor;
+  color: $fontColorSecondary;
+}
+.btn-success:hover {
+  background-color: $buttonBackgroundColorHover;
+}

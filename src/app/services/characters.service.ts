@@ -24,7 +24,7 @@ export class CharactersService {
     return this.http.post('api/characters', character);
   }
 
-  editCharacterById(character: Character) {
+  editCharacter(character: Character) {
     return this.http.put(`api/characters/${character.id}`, character);
   }
 

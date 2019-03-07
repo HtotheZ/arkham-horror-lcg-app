@@ -1,28 +1,34 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
 
-input {
-  background-color: $notesBackgroundColor;
-}
-
-input:hover {
-  background-color: $notesBackgroundColorSecondary;
-}
-
-input:checked {
-  background-color: $notesBackgroundColor;
-}
-
-input:focus {
-  background-color: $notesBackgroundColorSecondary;
-}
-
-
-.btn-back {
-  margin: 10px 10px 0 0;
-  background-color: $buttonBackgroundColorBack;
-  color: $fontColorSecondary;
-}
-.btn-back:hover {
-  background-color: $buttonBackgroundColorBackHover;
+.container {
+  input {
+    background-color: $notesBackgroundColor;
+  }
+  input:hover {
+    background-color: $notesBackgroundColorSecondary;
+  }
+  input:checked {
+    background-color: $notesBackgroundColor;
+  }
+  input:focus {
+    background-color: $notesBackgroundColorSecondary;
+  }
+  
+  
+  .btn-back {
+    margin: 10px 10px 0 0;
+    background-color: $buttonBackgroundColorBack;
+    color: $fontColorSecondary;
+  }
+  .btn-back:hover {
+    background-color: $buttonBackgroundColorBackHover;
+  }
+  .btn-success {
+    background-color: $buttonBackgroundColor;
+    color: $fontColorSecondary;
+  }
+  .btn-success:hover {
+    background-color: $buttonBackgroundColorHover;
+  }
 }

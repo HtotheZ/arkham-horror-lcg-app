@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { Character } from 'src/app/interfaces/character.interface';
 import { CharactersService } from 'src/app/services/characters.service';
 import { Note } from 'src/app/interfaces/note.interface';
 import { NotesService } from 'src/app/services/notes.service';
-import { filter, tap, map } from 'rxjs/operators';
-import { ActivatedRoute, Router } from '@angular/router';
 import { CampaignsService } from 'src/app/services/campaigns.service';
 import { Campaign } from 'src/app/interfaces/campaign.interface';
 
@@ -44,6 +44,11 @@ export class CampaignDetailsComponent implements OnInit {
         }
       )
     );
+  }
+
+  deleteCampaign(): void {
+    console.log(this.charactersService.getCharacters().subscribe(x => console.log(x)));
+    this.campaignsService.deleteNoteById(this.campaign.id).subscribe();
   }
 
   changeScenario(): void {

@@ -2,13 +2,16 @@
   <div class="campaign-details-header">
     <span class="campaign-details-header-name">{{campaign?.name}}</span>
     <div class="campaign-details-header-scenario">
-      <span>Current Scenario: 
-        <span *ngIf="!isEditScenario">{{campaign?.currentScenario}}</span>
-        <span *ngIf="isEditScenario">
-          <input type="text" (input)="currentScenario = $event.target.value" />
+      <span class="span-header-text">Current Scenario: 
+        <span class="span-header-text" *ngIf="!isEditScenario">{{campaign?.currentScenario}}</span>
+        <span class="span-header-text" *ngIf="isEditScenario">
+          <input type="text" value="{{campaign?.currentScenario}}" (input)="currentScenario = $event.target.value" />
         </span>
       </span>
-      <button class="btn" (click)="changeScenario()">CHANGE SCENARIO</button>
+      <button class="btn" (click)="changeScenario()">
+        <span *ngIf="!isEditScenario">CHANGE SCENARIO</span>
+        <span *ngIf="isEditScenario">SAVE</span>
+      </button>
     </div>
   </div>
   <div class="campaign-details-main">
@@ -21,6 +24,9 @@
       <button [routerLink]="['add-note']" class="btn">ADD A NEW NOTE</button>
     </div>
   </div>
-  <button [routerLink]="['']" class="btn btn-back">BACK TO CAMPAIGN SELECTION</button>
+  <div class="buttons-section">
+    <button [routerLink]="['']" class="btn btn-back">BACK TO CAMPAIGN SELECTION</button>
+    <button [routerLink]="['']" class="btn btn-back" (click)="deleteCampaign()">DELETE CAMPAIGN!</button>
+  </div>
 </div>
 <router-outlet></router-outlet>
