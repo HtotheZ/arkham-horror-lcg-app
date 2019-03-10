@@ -2,8 +2,22 @@
 @import '../../shared/mixins/flexbox';
 
 .container {
+  .header {
+    background-color: $itemBackgroundColorSecondary;
+    color: $fontColorPrimary;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .buttons-section {
+    @include flexbox($justify: flex-end);
+  }
+
   input {
     background-color: $notesBackgroundColor;
+    margin-bottom: 15px;
   }
   input:hover {
     background-color: $notesBackgroundColorSecondary;
@@ -17,7 +31,6 @@
   
   
   .btn-back {
-    margin: 10px 10px 0 0;
     background-color: $buttonBackgroundColorBack;
     color: $fontColorSecondary;
   }
@@ -27,6 +40,7 @@
   .btn-success {
     background-color: $buttonBackgroundColor;
     color: $fontColorSecondary;
+    margin-right: 15px;
   }
   .btn-success:hover {
     background-color: $buttonBackgroundColorHover;

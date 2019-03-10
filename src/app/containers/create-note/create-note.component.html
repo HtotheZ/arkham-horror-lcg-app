@@ -1,9 +1,12 @@
 <div class="container">
+  <div class="header">
+    Add a new Note
+  </div>
   <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <input type="text" id="note" formControlName="note" class="form-control">
       <button type="submit" class="btn btn-success">SUBMIT</button>
     </div>
   </form>
-  <button (click)="goBack()" class="btn btn-danger">BACK</button>
+  <button (click)="goBack()" class="btn btn-back">BACK</button>
 </div>

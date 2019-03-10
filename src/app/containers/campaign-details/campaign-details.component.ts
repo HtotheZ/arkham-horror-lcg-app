@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { Character } from 'src/app/interfaces/character.interface';
 import { CharactersService } from 'src/app/services/characters.service';
@@ -20,13 +21,15 @@ export class CampaignDetailsComponent implements OnInit {
   notes: Note[];
   isEditScenario: boolean;
   currentScenario: string;
+  isCampaignEmpty: boolean = true;
 
   constructor(
     private charactersService: CharactersService,
     private router: Router,
     private route: ActivatedRoute,
     private notesService: NotesService,
-    private campaignsService: CampaignsService
+    private campaignsService: CampaignsService,
+    private location: Location
   ) { }
 
   ngOnInit() {
@@ -47,12 +50,29 @@ export class CampaignDetailsComponent implements OnInit {
   }
 
   deleteCampaign(): void {
-    console.log(this.charactersService.getCharacters().subscribe(x => console.log(x)));
-    this.campaignsService.deleteNoteById(this.campaign.id).subscribe();
+    if (this.characters.length === 0 && this.notes.length === 0) {
+      this.campaignsService.deleteNoteById(this.campaign.id).subscribe();
+      this.goBack();
+    } else {
+      this.isCampaignEmpty = false;
+    }
   }
 
   changeScenario(): void {
     this.campaign.currentScenario = this.currentScenario;
+    if(this.isEditScenario) {
+      const campaignData = {
+        id: this.campaign.id,
+        name: this.campaign.name,
+        date: this.campaign.date,
+        currentScenario: this.campaign.currentScenario
+      }
+      this.campaignsService.editCampaign(campaignData).subscribe();
+    }
     this.isEditScenario = !this.isEditScenario;
+  }
+
+  goBack(): void {
+    this.router.navigate(['']);
   }
 }

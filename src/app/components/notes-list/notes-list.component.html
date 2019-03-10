@@ -2,14 +2,6 @@
   <ul *ngFor="let note of notes" class="list-group">
     <li class="notes-list-item list-group-item rounded" (click)="editNote(note.id)">
       <div class="note-body">{{note.body}}</div>
-      <!-- <div class="buttons-section">
-        <button type="button" class="btn btn-secondary">
-          <i class="fa fa-pencil" aria-hidden="true"></i> Edit
-        </button>
-        <button type="button" class="btn btn-danger">
-          <i class="fa fa-trash-o" aria-hidden="true"></i> Remove
-        </button>
-      </div> -->
     </li>
   </ul>
 </div>

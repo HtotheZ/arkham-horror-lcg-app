@@ -1,16 +1,16 @@
 {
   "campaigns": [
     {
-      "id": 1,
-      "name": "Path to Carcosa",
-      "date": "10-11-2018",
-      "currentScenario": "Dim Carcosa"
-    },
-    {
       "id": 2,
       "name": "Dunwich Legacy",
       "date": "19-12-2014",
       "currentScenario": "Blood on the Altar"
+    },
+    {
+      "id": 3,
+      "name": "Michal",
+      "date": "10-03-2019",
+      "currentScenario": "Luka y"
     }
   ],
   "characters": [
@@ -24,22 +24,22 @@
       "currentCampaignID": 2
     },
     {
-      "id": 7,
-      "img": "https://arkhamdb.com/bundles/cards/01002.png",
-      "name": "Daisy Walker",
-      "physTrauma": 3,
-      "menTrauma": 4,
-      "unusedXP": 2,
-      "currentCampaignID": 1
+      "id": 3,
+      "img": "https://f.allegroimg.com/s512/0358bc/0837da114fd7a5efe9e2e6a294cf",
+      "name": "Robyn",
+      "physTrauma": 1,
+      "menTrauma": 1,
+      "unusedXP": 4,
+      "currentCampaignID": 3
     },
     {
-      "id": 10,
-      "img": "https://arkhamdb.com/bundles/cards/03005.png",
-      "name": "William Yorick",
+      "id": 4,
+      "img": "https://arkhamdb.com/bundles/cards/03006.png",
+      "name": "Lola Hayes",
       "physTrauma": 0,
-      "menTrauma": 4,
+      "menTrauma": 5,
       "unusedXP": 0,
-      "currentCampaignID": 1
+      "currentCampaignID": 2
     }
   ],
   "investigators": [
@@ -139,17 +139,22 @@
       "id": 19
     },
     {
-      "name": "fdfd",
-      "img": "dfdf",
+      "name": "miau",
+      "img": "https://i.ytimg.com/vi/6pVKA31Ks_U/maxresdefault.jpghttps://i.ytimg.com/vi/6pVKA31Ks_U/maxresdefault.jpg",
       "id": 20
+    },
+    {
+      "name": "Robyn",
+      "img": "https://f.allegroimg.com/s512/0358bc/0837da114fd7a5efe9e2e6a294cf",
+      "id": 21
+    },
+    {
+      "name": "Luka",
+      "img": "https://f.allegroimg.com/s512/0358bc/0837da114fd7a5efe9e2e6a294cf",
+      "id": 22
     }
   ],
   "notes": [
-    {
-      "id": 5,
-      "body": "Badacze oczyścili drogę do ruin Eztli",
-      "currentCampaignID": 1
-    },
     {
       "body": "witaxik",
       "currentCampaignID": "1",
@@ -166,11 +171,6 @@
       "id": 9
     },
     {
-      "id": 18,
-      "body": "fd",
-      "currentCampaignID": 1
-    },
-    {
       "body": "Robyn",
       "currentCampaignID": 2,
       "id": 21
@@ -181,19 +181,19 @@
       "id": 23
     },
     {
-      "body": "fddjfdjnf",
-      "currentCampaignID": 2,
-      "id": 24
+      "id": 26,
+      "body": "robyn jest malutka.",
+      "currentCampaignID": 3
     },
     {
-      "body": "fdfdfdfdffd",
-      "currentCampaignID": 2,
-      "id": 25
-    },
-    {
-      "body": "fdfd",
+      "body": "Halo",
       "currentCampaignID": 3,
-      "id": 26
+      "id": 27
+    },
+    {
+      "body": "Robyn",
+      "currentCampaignID": 3,
+      "id": 28
     }
   ]
 }

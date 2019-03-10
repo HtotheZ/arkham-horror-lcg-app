@@ -16,5 +16,21 @@
   }
   .inv-form-wrapper {
     width: 34%;
+    background-color: $characterBackgroundColor;
+    padding: 5px;
+    .form-group {
+      .text {
+        margin-top: 5px;
+        color: $fontColorSecondary;
+      }
+      .btn-success {
+        margin-top: 20px;
+        background-color: $buttonBackgroundColor;
+        color: $fontColorSecondary;
+      }
+      .btn-success:hover {
+        background-color: $buttonBackgroundColorHover;
+      }
+    }
   }
 }

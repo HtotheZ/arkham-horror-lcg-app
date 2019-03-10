@@ -5,6 +5,14 @@
   .campaign-details {
     &-main {
       @include flexbox($justify: space-between);
+      &-header {
+        background-color: $itemBackgroundColorSecondary;
+        color: $fontColorPrimary;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
       &-char {
         width: 49%;
         .btn {
@@ -43,11 +51,20 @@
           background-color: $buttonBackgroundColor;
           color: $fontColorSecondary;
         }
+        .btn:hover {
+          background-color: $buttonBackgroundColorHover;
+          color: $fontColorSecondary;
+        }
       }
     }
   }
   .buttons-section {
     @include flexbox($justify: space-between);
+    .text-error {
+      color: $fontColorError;
+      margin-right: 10px;
+      font-size: 1.3rem;
+    }
     .btn-back {
       background-color: $buttonBackgroundColorBack;
       color: $fontColorSecondary;

@@ -24,6 +24,10 @@ export class CampaignsService {
     return this.http.post('/api/campaigns', campaign);
   }
 
+  editCampaign(campaign: Campaign) {
+    return this.http.put(`/api/campaigns/${campaign.id}`, campaign);
+  }
+
   deleteNoteById(id: number) {
     return this.http.delete(`api/campaigns/${id}`);
   }

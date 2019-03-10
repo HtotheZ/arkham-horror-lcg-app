@@ -1,10 +1,15 @@
 <div class="container">
+  <div class="header">
+    Edit Note
+  </div>
   <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <input type="text" id="note" value="{{note.body}}" formControlName="note" class="form-control">
-      <button type="submit" class="btn btn-success">SUBMIT</button>
+      <div class="buttons-section">
+        <button type="submit" class="btn btn-success">UPDATE</button>
+        <button (click)="deleteNote()" class="btn btn-back">DELETE NOTE</button>
+      </div>
     </div>
     <button (click)="goBack()" class="btn btn-back">BACK</button>
-    <button (click)="deleteNote()" class="btn btn-back">DELETE NOTE</button>
   </form>
 </div>

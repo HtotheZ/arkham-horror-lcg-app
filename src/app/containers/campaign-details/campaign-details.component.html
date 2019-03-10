@@ -16,17 +16,22 @@
   </div>
   <div class="campaign-details-main">
     <div class="campaign-details-main-char">
+      <div class="campaign-details-main-header">Active Characters: </div>
       <app-characters-list [characters]="characters"></app-characters-list>
       <button [routerLink]="['add-character']" class="btn">ADD A NEW CHARACTER</button>
     </div>
     <div class="campaign-details-main-notes">
+      <div class="campaign-details-main-header">Campaign Notes: </div>
       <app-notes-list [notes]="notes"></app-notes-list>
       <button [routerLink]="['add-note']" class="btn">ADD A NEW NOTE</button>
     </div>
   </div>
   <div class="buttons-section">
     <button [routerLink]="['']" class="btn btn-back">BACK TO CAMPAIGN SELECTION</button>
-    <button [routerLink]="['']" class="btn btn-back" (click)="deleteCampaign()">DELETE CAMPAIGN!</button>
+    <span>
+      <span *ngIf="!isCampaignEmpty" class="text-error">Delete all characters and notes first!</span>
+      <button class="btn btn-back" (click)="deleteCampaign()">DELETE CAMPAIGN!</button>
+    </span>
   </div>
 </div>
 <router-outlet></router-outlet>

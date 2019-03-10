@@ -22,15 +22,17 @@ Command for running the app (on localhost:4200):
 npm start
 ```
 
-### "How to use" guide
+## "How to use" guide
 
 Welcome screen allows for:
 * Creating a new campaign
 * Editing existing one. Here you can:
   * Change current scenario on the top of the screen
   * Edit exisiting character by clicking on character card. Here you can:
-    * Adding new investigator template to database (name and img link)
-    * Updating character status (trauma, xp, deleting character)
-  * Add a new character
+    * Update character status (trauma, xp, deleting character)
+  * Add a new character. Here you can:
+    * Add a new character using existing investigator templates
+    * Add new investigator template to database (name and img link)
   * Edit exisiting note by clicking on character card
   * Add a new note
+  * Delete current campaign

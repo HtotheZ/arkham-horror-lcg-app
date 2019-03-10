@@ -53,7 +53,8 @@ export class CreateCharacterComponent implements OnInit {
       img: this.investigatorForm.value.linkImg,
     };
     this.charactersService.addNewInvestigator(this.investigatorData).subscribe();
-    this.goBack();
+    window.location.reload();
+    // this.goBack();
   }
 
   onCharacterFormSubmit(): void {

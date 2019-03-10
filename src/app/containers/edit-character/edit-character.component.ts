@@ -55,7 +55,7 @@ export class EditCharacterComponent implements OnInit {
   }
 
   incrementTrauma(type: number): void {
-    if (this.physTrauma.length < 14 && this.menTrauma.length < 14) {
+    if (this.physTrauma.length < 12 && this.menTrauma.length < 12) {
       if (type === 1) {
         this.physTrauma.push(null);
       } else {

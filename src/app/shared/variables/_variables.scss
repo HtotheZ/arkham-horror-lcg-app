@@ -1,7 +1,8 @@
 $itemBackgroundColorMain: rgba(#d5e2d7, 0.8);
 $itemBackgroundColorMainHover: rgba(#d5e2d7, 0.6);
 
-$itemBackgroundColorSecondary: rgba(#0f260d, 0.6);
+$itemBackgroundColorSecondary: rgba(#0f260d, 0.7);
+$itemBackgroundColorSecondaryHover: rgba(#0f260d, 0.4);
 
 $notesBackgroundColor: rgba(#f1f1f1, 0.8);
 $notesBackgroundColorSecondary: rgba(#f1f1f1, 0.9);
@@ -21,3 +22,4 @@ $fontNotes: 'Kalam', cursive;
 $fontColorTitle: #093805;
 $fontColorPrimary: #ddffdb;
 $fontColorSecondary: #ffffff;
+$fontColorError: #d16ee5;
