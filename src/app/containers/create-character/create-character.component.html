@@ -1,30 +1,42 @@
 <div class="container">
   <div class="forms">
-    <div class="char-form-wrapper">
-      <form [formGroup]="characterForm" (ngSubmit)="onCharacterFormSubmit()">
-        <div class="form-group">
-          <span class="text-primary">* </span><label class="text" for="investigatorSelection">Choose Investigator</label>
-          <select class="form-control" id="investigatorSelection" formControlName="investigatorSelection" (change)="onSelect($event)">
-            <option *ngFor="let investigator of investigators" value="{{investigator.id}}">{{investigator.name}}</option>
-          </select>
-          <div><img src="{{selectedCharacterClass?.img}}"></div>
-          <button type="submit" class="btn btn-success">SUBMIT</button>
-        </div>
-      </form>
+
+    <div class="char">
+      <div class="header">
+        Add a new Character
+      </div>
+      <div class="char-form-wrapper">
+        <form [formGroup]="characterForm" (ngSubmit)="onCharacterFormSubmit()">
+          <div class="form-group">
+            <span class="text-primary">* </span><label class="text" for="investigatorSelection">Choose Investigator</label>
+            <select class="form-control" id="investigatorSelection" formControlName="investigatorSelection" (change)="onSelect($event)">
+              <option *ngFor="let investigator of investigators" value="{{investigator.id}}">{{investigator.name}}</option>
+            </select>
+            <div><img src="{{selectedCharacterClass?.img}}"></div>
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+          </div>
+        </form>
+      </div>
     </div>
-  
-    <div class="inv-form-wrapper">
-      <form [formGroup]="investigatorForm" (ngSubmit)="onInvestigatorFormSubmit()">
-        <div class="form-group">
-          <span class="text-primary">* </span><label class="text" for="investigator">Investigator Name:</label>
-          <input type="text" id="investigator" formControlName="investigator" class="form-control">
-          <span class="text-primary">* </span><label class="text" for="linkImg">Investigator Image Link:</label>
-          <input type="text" id="linkImg" formControlName="linkImg" class="form-control">
-          <button type="submit" class="btn btn-success">SUBMIT</button>
-        </div>
-      </form>
+
+    <div class="inv">
+      <div class="header">
+          Add a new Investigator
+      </div>
+      <div class="inv-form-wrapper">
+        <form [formGroup]="investigatorForm" (ngSubmit)="onInvestigatorFormSubmit()">
+          <div class="form-group">
+            <span class="text-primary">* </span><label class="text" for="investigator">Investigator Name:</label>
+            <input type="text" id="investigator" formControlName="investigator" class="form-control">
+            <span class="text-primary">* </span><label class="text" for="linkImg">Investigator Image Link:</label>
+            <input type="text" id="linkImg" formControlName="linkImg" class="form-control">
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+          </div>
+        </form>
+      </div>
     </div>
+
   </div>
   
-  <button (click)="goBack()" class="btn btn-danger">BACK</button>
+  <button (click)="goBack()" class="btn btn-back">BACK</button>
 </div>

@@ -16,16 +16,22 @@
       &-char {
         width: 49%;
         .btn {
-          background-color: $buttonBackgroundColorSecondary;
+          background-color: $buttonBackgroundColor;
           color: $fontColorSecondary;
           margin-bottom: 30px;
+        }
+        .btn:hover {
+          background-color: $buttonBackgroundColorHover;
         }
       }
       &-notes {
         width: 49%;
         .btn {
-          background-color: $buttonBackgroundColorSecondary;
+          background-color: $buttonBackgroundColor;
           color: $fontColorSecondary;
+        }
+        .btn:hover {
+          background-color: $buttonBackgroundColorHover;
         }
       }
     }

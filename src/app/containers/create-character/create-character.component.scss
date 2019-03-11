@@ -4,33 +4,94 @@
 .forms {
   width: 100%;
   @include flexbox($justify: space-between);
-  .char-form-wrapper {
+  .header {
+    background-color: $itemBackgroundColorSecondary;
+    color: $fontColorPrimary;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .char {
     width: 64%;
-    background-color: $characterBackgroundColor;
-    padding: 5px;
-    .form-group {
-      .text {
-        color: $fontColorSecondary;
+    .char-form-wrapper {
+      background-color: $characterBackgroundColor;
+      padding: 5px;
+      .form-group {
+        .text {
+          color: $fontColorSecondary;
+        }
+        img {
+          margin-bottom: 15px;
+        }
       }
     }
   }
-  .inv-form-wrapper {
+
+  .inv {
     width: 34%;
-    background-color: $characterBackgroundColor;
-    padding: 5px;
-    .form-group {
-      .text {
-        margin-top: 5px;
-        color: $fontColorSecondary;
-      }
-      .btn-success {
-        margin-top: 20px;
-        background-color: $buttonBackgroundColor;
-        color: $fontColorSecondary;
-      }
-      .btn-success:hover {
-        background-color: $buttonBackgroundColorHover;
+    .inv-form-wrapper {
+      background-color: $characterBackgroundColor;
+      padding: 5px;
+      .form-group {
+        .text {
+          margin-top: 5px;
+          color: $fontColorSecondary;
+        }
+        .btn-success {
+          margin-top: 20px;
+          background-color: $buttonBackgroundColor;
+          color: $fontColorSecondary;
+        }
+        .btn-success:hover {
+          background-color: $buttonBackgroundColorHover;
+        }
       }
     }
   }
+}
+
+input {
+  background-color: $notesBackgroundColor;
+  margin-bottom: 15px;
+}
+input:hover {
+  background-color: $notesBackgroundColorSecondary;
+}
+input:checked {
+  background-color: $notesBackgroundColor;
+}
+input:focus {
+  background-color: $notesBackgroundColorSecondary;
+}
+
+select {
+  background-color: $notesBackgroundColor;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+select:hover {
+  background-color: $notesBackgroundColorSecondary;
+}
+select:checked {
+  background-color: $notesBackgroundColor;
+}
+select:focus {
+  background-color: $notesBackgroundColorSecondary;
+}
+
+.btn-back {
+  background-color: $buttonBackgroundColorBack;
+  color: $fontColorSecondary;
+}
+.btn-back:hover {
+  background-color: $buttonBackgroundColorBackHover;
+}
+.btn-success {
+  background-color: $buttonBackgroundColor;
+  color: $fontColorSecondary;
+  margin-right: 15px;
+}
+.btn-success:hover {
+  background-color: $buttonBackgroundColorHover;
 }

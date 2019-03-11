@@ -2,6 +2,14 @@
 @import '../../shared/mixins/flexbox';
 
 .container {
+  .header {
+    background-color: $itemBackgroundColorSecondary;
+    color: $fontColorPrimary;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
   .character-list {
     background-color: $characterBackgroundColor;
     color: $fontColorSecondary;
