@@ -41,7 +41,6 @@ export class CreateCampaignComponent implements OnInit {
       date: this.dateToString(),
       currentScenario: this.campaignForm.value.currentScenario
     };
-    console.log(this.campaignForm.value);
     this.campaignsService.addNewCampaign(campaign).subscribe();
     this.goBack();
   }
