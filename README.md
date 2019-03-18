@@ -1,6 +1,6 @@
 # Arkham Horror LCG companion App
 
-Welcome to Arkham Horror LCG companion App! The goal of this project was to create a tool for keeping track of all the necessary data during Arkham Horror LCG campaings. More info about the game (https://boardgamegeek.com/boardgame/205637/arkham-horror-card-game)
+Welcome to Arkham Horror LCG companion App! The goal of this project was to create a tool for keeping track of all the necessary data during Arkham Horror LCG campaings. More info about the game - https://boardgamegeek.com/boardgame/205637/arkham-horror-card-game
 
 ## Getting Started
 
