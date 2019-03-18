@@ -1,0 +1,9 @@
+@import '../variables/variables';
+
+@mixin button($background: $buttonBackgroundColor, $hover: $buttonBackgroundColorHover) {
+  background-color: $background;
+  color: $fontColorSecondary;
+  &:hover {
+    background-color: $hover;
+  }
+}

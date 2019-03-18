@@ -1,5 +1,6 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
+@import '../../shared/mixins/button';
 
 .campaign-form-wrapper {
   width: 100%;
@@ -27,17 +28,9 @@ input:focus {
 }
 
 .btn-back {
+  @include button($buttonBackgroundColorBack, $buttonBackgroundColorBackHover);
   margin: 10px 10px 0 0;
-  background-color: $buttonBackgroundColorBack;
-  color: $fontColorSecondary;
-}
-.btn-back:hover {
-  background-color: $buttonBackgroundColorBackHover;
 }
 .btn-success {
-  background-color: $buttonBackgroundColor;
-  color: $fontColorSecondary;
-}
-.btn-success:hover {
-  background-color: $buttonBackgroundColorHover;
+  @include button();
 }

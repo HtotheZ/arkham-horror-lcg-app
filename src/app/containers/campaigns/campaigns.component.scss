@@ -1,5 +1,6 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
+@import '../../shared/mixins/button';
 
 .container {
   height: 700px;
@@ -21,16 +22,11 @@
     }
   }
   .btn {
-    background-color: $buttonBackgroundColor;
-    color: $fontColorPrimary;
-  }
-  .btn:hover {
-    background-color: $buttonBackgroundColorHover;
+    @include button();
   }
   .campaign-list:hover {
     animation-name: animation;
     animation-duration: 1s;
-    // animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     background-color: $itemBackgroundColorSecondary; 
     color: $fontColorSecondary;

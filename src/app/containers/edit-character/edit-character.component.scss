@@ -1,5 +1,6 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
+@import '../../shared/mixins/button';
 
 .container {
   .header {
@@ -59,21 +60,13 @@
   }
   .buttons-section {
     @include flexbox($justify: space-between);
-    .btn-submit {
-      margin-top: 10px;
-      background-color: $buttonBackgroundColor;
-      color: $fontColorSecondary;
-    }
-    .btn-submit:hover {
-      background-color: $buttonBackgroundColorHover;
-    }
     .btn-back {
+      @include button($buttonBackgroundColorBack, $buttonBackgroundColorBackHover);
       margin: 10px 10px 0 0;
-      background-color: $buttonBackgroundColorBack;
-      color: $fontColorSecondary;
     }
-    .btn-back:hover {
-      background-color: $buttonBackgroundColorBackHover;
+    .btn-success {
+      @include button();
+      margin-top: 10px;
     }
   }
 }

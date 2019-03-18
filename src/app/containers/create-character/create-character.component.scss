@@ -1,5 +1,6 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
+@import '../../shared/mixins/button';
 
 .forms {
   width: 100%;
@@ -81,17 +82,9 @@ select:focus {
 }
 
 .btn-back {
-  background-color: $buttonBackgroundColorBack;
-  color: $fontColorSecondary;
-}
-.btn-back:hover {
-  background-color: $buttonBackgroundColorBackHover;
+  @include button($buttonBackgroundColorBack, $buttonBackgroundColorBackHover);
 }
 .btn-success {
-  background-color: $buttonBackgroundColor;
-  color: $fontColorSecondary;
+  @include button();
   margin-right: 15px;
-}
-.btn-success:hover {
-  background-color: $buttonBackgroundColorHover;
 }

@@ -1,5 +1,6 @@
 @import '../../shared/variables/variables';
 @import '../../shared/mixins/flexbox';
+@import '../../shared/mixins/button';
 
 .container {
   .campaign-details {
@@ -72,11 +73,7 @@
       font-size: 1.3rem;
     }
     .btn-back {
-      background-color: $buttonBackgroundColorBack;
-      color: $fontColorSecondary;
-    }
-    .btn-back:hover {
-      background-color: $buttonBackgroundColorBackHover;
+      @include button($buttonBackgroundColorBack, $buttonBackgroundColorBackHover);
     }
   }
 }
