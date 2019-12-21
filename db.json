@@ -5,6 +5,36 @@
       "name": "Dunwich Legacy",
       "date": "19-12-2014",
       "currentScenario": "Blood on the Altar"
+    },
+    {
+      "id": 3,
+      "name": "Zapomniana Era",
+      "date": "12-03-2019",
+      "currentScenario": "Serce Starszych"
+    },
+    {
+      "name": "Zapomniana Era",
+      "date": "04-04-2019",
+      "currentScenario": "first",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Zapomniana Era",
+      "date": "20-06-2019",
+      "currentScenario": "4"
+    },
+    {
+      "id": 7,
+      "name": "Przerwany Krag",
+      "date": "15-09-2019",
+      "currentScenario": "Godzina duchow"
+    },
+    {
+      "name": "Dziedzictwo Dunwich (Armin)",
+      "date": "21-11-2019",
+      "currentScenario": "Kasyno zawsze wygrywa",
+      "id": 8
     }
   ],
   "characters": [
@@ -12,9 +42,9 @@
       "id": 2,
       "img": "https://arkhamdb.com/bundles/cards/03004.png",
       "name": "Akachi Onyele",
-      "physTrauma": 2,
-      "menTrauma": 3,
-      "unusedXP": 3,
+      "physTrauma": 6,
+      "menTrauma": 4,
+      "unusedXP": 4,
       "currentCampaignID": 2
     },
     {
@@ -25,6 +55,69 @@
       "menTrauma": 5,
       "unusedXP": 0,
       "currentCampaignID": 2
+    },
+    {
+      "id": 5,
+      "img": "https://arkhamdb.com/bundles/cards/04004.png",
+      "name": "Father Mateo",
+      "physTrauma": 4,
+      "menTrauma": 3,
+      "unusedXP": 1,
+      "currentCampaignID": 3
+    },
+    {
+      "id": 6,
+      "img": "https://arkhamdb.com/bundles/cards/03002.png",
+      "name": "Minh Thi Phan",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 5
+    },
+    {
+      "id": 7,
+      "img": "https://arkhamdb.com/bundles/cards/04001.png",
+      "name": "Leo Anderson",
+      "physTrauma": 1,
+      "menTrauma": 0,
+      "unusedXP": 2,
+      "currentCampaignID": 5
+    },
+    {
+      "id": 8,
+      "img": "https://arkhamdb.com/bundles/cards/05002.png",
+      "name": "Joe Diamond",
+      "physTrauma": 2,
+      "menTrauma": 1,
+      "unusedXP": 0,
+      "currentCampaignID": 6
+    },
+    {
+      "id": 9,
+      "img": "https://arkhamdb.com/bundles/cards/05003.png",
+      "name": "Preston Fairmont",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 1,
+      "currentCampaignID": 7
+    },
+    {
+      "id": 10,
+      "img": "https://arkhamdb.com/bundles/cards/02004.png",
+      "name": "Jim Culver",
+      "physTrauma": 1,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 8
+    },
+    {
+      "name": "William Yorick",
+      "img": "https://arkhamdb.com/bundles/cards/03005.png",
+      "physTrauma": 0,
+      "menTrauma": 0,
+      "unusedXP": 0,
+      "currentCampaignID": 8,
+      "id": 11
     }
   ],
   "investigators": [
@@ -122,6 +215,21 @@
       "name": "Finn Edwards",
       "img": "https://arkhamdb.com/bundles/cards/04003.png",
       "id": 19
+    },
+    {
+      "name": "Father Mateo",
+      "img": "https://arkhamdb.com/bundles/cards/04004.png",
+      "id": 20
+    },
+    {
+      "name": "Joe Diamond",
+      "img": "https://arkhamdb.com/bundles/cards/05002.png",
+      "id": 21
+    },
+    {
+      "name": "Preston Fairmont",
+      "img": "https://arkhamdb.com/bundles/cards/05003.png",
+      "id": 22
     }
   ],
   "notes": [
@@ -149,6 +257,266 @@
       "id": 23,
       "body": "Alejandro kontynuuje poszukiwania na własną rękę",
       "currentCampaignID": 2
+    },
+    {
+      "id": 24,
+      "body": "Furia Yiga: 24",
+      "currentCampaignID": 3
+    },
+    {
+      "body": "Alejandro zdecydował się pozostać w obozie",
+      "currentCampaignID": 3,
+      "id": 26
+    },
+    {
+      "body": "Badacze zdobyli zaufanie Ichtaci",
+      "currentCampaignID": 3,
+      "id": 27
+    },
+    {
+      "id": 28,
+      "body": "Ekwipunek: kreda, mapa, koc, kilof, kompas",
+      "currentCampaignID": 3
+    },
+    {
+      "id": 29,
+      "body": "Dodane żetony: kultysta, nagrobek",
+      "currentCampaignID": 3
+    },
+    {
+      "body": "Badacze odzyskali Relikt wieczności",
+      "currentCampaignID": 3,
+      "id": 30
+    },
+    {
+      "body": "Badacze pozostawili relikt pod opieką Alejandra",
+      "currentCampaignID": 3,
+      "id": 32
+    },
+    {
+      "body": "Badacze zdobyli zaufanie Alejandra",
+      "currentCampaignID": 3,
+      "id": 33
+    },
+    {
+      "body": "Badacze znalezli zaginiony relikt",
+      "currentCampaignID": 3,
+      "id": 34
+    },
+    {
+      "body": "Badacze uratowali Alejandra",
+      "currentCampaignID": 3,
+      "id": 35
+    },
+    {
+      "body": "Badaczom udalo sie nawiazac kontakt z Ichtaca",
+      "currentCampaignID": 3,
+      "id": 36
+    },
+    {
+      "body": "Znacie 2 sciezki",
+      "currentCampaignID": 3,
+      "id": 37
+    },
+    {
+      "body": "gfg",
+      "currentCampaignID": 2,
+      "id": 39
+    },
+    {
+      "body": "Badacze wspopracolawi z Yithianami",
+      "currentCampaignID": 3,
+      "id": 40
+    },
+    {
+      "body": "Proces mial niepozadane skutki",
+      "currentCampaignID": 3,
+      "id": 41
+    },
+    {
+      "body": "Alejandro jest przeciwko nam",
+      "currentCampaignID": 3,
+      "id": 42
+    },
+    {
+      "body": "Ichtaca jest przeciwko wam",
+      "currentCampaignID": 3,
+      "id": 43
+    },
+    {
+      "body": "Badacze spadli w czelusc",
+      "currentCampaignID": 3,
+      "id": 44
+    },
+    {
+      "body": "Koksowniki sa zgaszone",
+      "currentCampaignID": 3,
+      "id": 45
+    },
+    {
+      "id": 46,
+      "body": "Minh Ekwipunek: koc, kompas",
+      "currentCampaignID": 5
+    },
+    {
+      "id": 47,
+      "body": "Leo Ekwipunek: koc, lornetka",
+      "currentCampaignID": 5
+    },
+    {
+      "body": "Furia Yiga: 3",
+      "currentCampaignID": 5,
+      "id": 48
+    },
+    {
+      "body": "Alejandro zdecydował się pozostać w obozie",
+      "currentCampaignID": 5,
+      "id": 49
+    },
+    {
+      "body": "Badacze zdobyli zaufanie Ichtaci",
+      "currentCampaignID": 5,
+      "id": 50
+    },
+    {
+      "body": "Badacze oczyścili drogę do ruin Eztli",
+      "currentCampaignID": 5,
+      "id": 51
+    },
+    {
+      "body": "zetonixy: kapturzysta",
+      "currentCampaignID": 5,
+      "id": 52
+    },
+    {
+      "body": "jestem gimbem",
+      "currentCampaignID": 2,
+      "id": 53
+    },
+    {
+      "id": 54,
+      "body": "Ekwipunek: kompas, kilof",
+      "currentCampaignID": 6
+    },
+    {
+      "body": "Badacze zdobyli zaufanie Ichtaci",
+      "currentCampaignID": 6,
+      "id": 55
+    },
+    {
+      "body": "Badacze oczyścili drogę do ruin Eztli",
+      "currentCampaignID": 6,
+      "id": 56
+    },
+    {
+      "body": "Alejandro zdecydował się pozostać w obozie",
+      "currentCampaignID": 6,
+      "id": 57
+    },
+    {
+      "id": 58,
+      "body": "Furia Yiga: 11",
+      "currentCampaignID": 6
+    },
+    {
+      "id": 59,
+      "body": "Herold nadal żyje (5)",
+      "currentCampaignID": 6
+    },
+    {
+      "body": "Alejandro kontynuuje badania na wlasna reke",
+      "currentCampaignID": 6,
+      "id": 62
+    },
+    {
+      "id": 63,
+      "body": "zetonixy: kapturzysta x2, -3",
+      "currentCampaignID": 6
+    },
+    {
+      "body": "relikt zaginal",
+      "currentCampaignID": 6,
+      "id": 65
+    },
+    {
+      "body": "Badacze uratowali Alejandra",
+      "currentCampaignID": 6,
+      "id": 66
+    },
+    {
+      "body": "Badaczom udalo sie nawiazac kontakt z Ichtaca",
+      "currentCampaignID": 6,
+      "id": 67
+    },
+    {
+      "body": "Znacie 1 sciezki",
+      "currentCampaignID": 6,
+      "id": 68
+    },
+    {
+      "body": "Alejandro jest przeciwko nam",
+      "currentCampaignID": 6,
+      "id": 69
+    },
+    {
+      "body": "Koksowniki sa zgaszone",
+      "currentCampaignID": 6,
+      "id": 70
+    },
+    {
+      "body": "Pozostawiono 3 dowody",
+      "currentCampaignID": 7,
+      "id": 71
+    },
+    {
+      "body": "akceptuje los",
+      "currentCampaignID": 7,
+      "id": 72
+    },
+    {
+      "body": "zetony: 2 nagrobki",
+      "currentCampaignID": 7,
+      "id": 73
+    },
+    {
+      "body": "udalo sie zlamac zaklecie wiedzm",
+      "currentCampaignID": 7,
+      "id": 74
+    },
+    {
+      "body": "odnalezione pamiatki: hipnotyzujacy flet, strzepy porwanego cienia",
+      "currentCampaignID": 7,
+      "id": 75
+    },
+    {
+      "body": "badacze sa na tropie valentino",
+      "currentCampaignID": 7,
+      "id": 76
+    },
+    {
+      "body": "badacze uciekli z widmowego wymiaru",
+      "currentCampaignID": 7,
+      "id": 77
+    },
+    {
+      "body": "Josef rozplynal sie we mgle",
+      "currentCampaignID": 7,
+      "id": 78
+    },
+    {
+      "body": "badacze sa wrogami lozy",
+      "currentCampaignID": 7,
+      "id": 79
+    },
+    {
+      "body": "mamy z kimstam na pienku",
+      "currentCampaignID": 8,
+      "id": 80
+    },
+    {
+      "body": "zetony: macki w chuj",
+      "currentCampaignID": 8,
+      "id": 81
     }
   ]
 }
